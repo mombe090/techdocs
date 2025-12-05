@@ -76,6 +76,13 @@ repos:
         args: [--baseline, .secrets.baseline]
         exclude: package.lock.json
 
+  # Conventional commits validation
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.6.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+
   # Prettier formatting using npx (local hook)
   - repo: local
     hooks:
