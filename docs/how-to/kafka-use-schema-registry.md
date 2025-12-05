@@ -954,7 +954,32 @@ Now that you understand schema management, explore:
 
 ## Additional Resources
 
+### Official Documentation
+
 - [Confluent Schema Registry Documentation](https://docs.confluent.io/platform/current/schema-registry/index.html)
-- [Avro Specification](https://avro.apache.org/docs/current/spec.html)
-- [Schema Evolution Best Practices](https://docs.confluent.io/platform/current/schema-registry/avro.html#schema-evolution)
 - [Schema Registry REST API Reference](https://docs.confluent.io/platform/current/schema-registry/develop/api.html)
+- [Schema Registry Configuration Options](https://docs.confluent.io/platform/current/schema-registry/installation/config.html)
+
+### Schema Formats
+
+- [Apache Avro Specification](https://avro.apache.org/docs/current/spec.html)
+- [Protocol Buffers Documentation](https://protobuf.dev/)
+- [JSON Schema Specification](https://json-schema.org/)
+
+### Tutorials & Best Practices
+
+- [Schema Registry Tutorial](https://developer.confluent.io/learn-kafka/schema-registry/get-started/) - Free Confluent course
+- [Schema Evolution Best Practices](https://docs.confluent.io/platform/current/schema-registry/avro.html#schema-evolution)
+- [Serialization and Schema Registry Guide](https://www.confluent.io/blog/kafka-schemas-serialization-evolution/)
+- [Schema Validation Patterns](https://www.confluent.io/blog/schema-registry-kafka-stream-processing-yes-virginia-you-really-need-one/)
+
+### Advanced Topics
+
+- [Schema Registry Security](https://docs.confluent.io/platform/current/schema-registry/security/index.html)
+- [Multi-Datacenter Schema Registry](https://docs.confluent.io/platform/current/schema-registry/multidc.html)
+- [Schema Linking and Migration](https://docs.confluent.io/cloud/current/sr/schema-linking.html)
+
+---
+
+!!! info "Course Attribution"
+This guide is based on content from Confluent Schema Registry documentation, Apache Avro specification, and industry best practices.

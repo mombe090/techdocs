@@ -954,7 +954,32 @@ Maintenant que vous comprenez la gestion des schémas, explorez :
 
 ## Ressources Additionnelles
 
+### Documentation Officielle
+
 - [Documentation Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/index.html)
-- [Spécification Avro](https://avro.apache.org/docs/current/spec.html)
-- [Bonnes Pratiques d'Évolution de Schéma](https://docs.confluent.io/platform/current/schema-registry/avro.html#schema-evolution)
 - [Référence API REST Schema Registry](https://docs.confluent.io/platform/current/schema-registry/develop/api.html)
+- [Options de Configuration Schema Registry](https://docs.confluent.io/platform/current/schema-registry/installation/config.html)
+
+### Formats de Schémas
+
+- [Spécification Apache Avro](https://avro.apache.org/docs/current/spec.html)
+- [Documentation Protocol Buffers](https://protobuf.dev/)
+- [Spécification JSON Schema](https://json-schema.org/)
+
+### Tutoriels & Meilleures Pratiques
+
+- [Tutoriel Schema Registry](https://developer.confluent.io/learn-kafka/schema-registry/get-started/) - Cours gratuit Confluent
+- [Meilleures Pratiques d'Évolution de Schéma](https://docs.confluent.io/platform/current/schema-registry/avro.html#schema-evolution)
+- [Guide Sérialisation et Schema Registry](https://www.confluent.io/blog/kafka-schemas-serialization-evolution/)
+- [Patterns de Validation de Schéma](https://www.confluent.io/blog/schema-registry-kafka-stream-processing-yes-virginia-you-really-need-one/)
+
+### Sujets Avancés
+
+- [Sécurité Schema Registry](https://docs.confluent.io/platform/current/schema-registry/security/index.html)
+- [Schema Registry Multi-Datacenter](https://docs.confluent.io/platform/current/schema-registry/multidc.html)
+- [Schema Linking et Migration](https://docs.confluent.io/cloud/current/sr/schema-linking.html)
+
+---
+
+!!! info "Attribution du Cours"
+Ce guide est basé sur le contenu de la documentation Confluent Schema Registry, la spécification Apache Avro, et les meilleures pratiques de l'industrie.

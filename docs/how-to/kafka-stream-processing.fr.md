@@ -1089,8 +1089,35 @@ Maintenant que vous comprenez le traitement de flux, explorez :
 
 ## Ressources Additionnelles
 
-- [Documentation Kafka Streams](https://kafka.apache.org/documentation/streams/)
+### Documentation Officielle
+
+- [Documentation Apache Kafka Streams](https://kafka.apache.org/documentation/streams/)
+- [Javadoc API Kafka Streams](https://kafka.apache.org/documentation/streams/javadocs/)
 - [Documentation Apache Flink](https://flink.apache.org/docs/stable/)
-- [Designing Event-Driven Systems (Livre O'Reilly Gratuit)](https://www.confluent.io/resources/ebook/designing-event-driven-systems/)
-- [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/)
-- [Kafka Streams in Action](https://www.manning.com/books/kafka-streams-in-action)
+- [Connecteur Kafka pour Flink](https://nightlies.apache.org/flink/flink-docs-stable/docs/connectors/datastream/kafka/)
+
+### Tutoriels & Cours
+
+- [Cours Kafka Streams 101](https://developer.confluent.io/learn-kafka/kafka-streams/get-started/) - Cours gratuit Confluent
+- [Formation Pratique Apache Flink](https://flink.apache.org/training.html)
+- [Fondamentaux du Traitement de Flux](https://www.confluent.io/learn/stream-processing/)
+- [Tutoriel Construction d'Applications Streaming](https://kafka.apache.org/documentation/streams/tutorial)
+
+### Livres & Guides
+
+- [Designing Event-Driven Systems](https://www.confluent.io/resources/ebook/designing-event-driven-systems/) - Livre gratuit O'Reilly par Ben Stopford
+- [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/) - Fabian Hueske & Vasiliki Kalavri
+- [Kafka Streams in Action](https://www.manning.com/books/kafka-streams-in-action) - Bill Bejeck
+- [Mastering Kafka Streams](https://www.oreilly.com/library/view/mastering-kafka-streams/9781492062486/) - Mitch Seymour
+
+### Sujets Avancés
+
+- [State Stores Kafka Streams](https://kafka.apache.org/documentation/streams/developer-guide/processor-api.html#state-stores)
+- [Gestion d'État Flink](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/datastream/fault-tolerance/state/)
+- [Sémantique Exactly-Once dans Kafka Streams](https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/)
+- [Comparaison des Stratégies de Fenêtrage](https://www.confluent.io/blog/windowing-in-kafka-streams/)
+
+---
+
+!!! info "Attribution du Cours"
+Ce guide est basé sur le contenu de la documentation Apache Kafka Streams, la documentation Apache Flink, les tutoriels Confluent, et les meilleures pratiques de l'industrie.

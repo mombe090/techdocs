@@ -1089,8 +1089,35 @@ Now that you understand stream processing, explore:
 
 ## Additional Resources
 
-- [Kafka Streams Documentation](https://kafka.apache.org/documentation/streams/)
+### Official Documentation
+
+- [Apache Kafka Streams Documentation](https://kafka.apache.org/documentation/streams/)
+- [Kafka Streams API Javadoc](https://kafka.apache.org/documentation/streams/javadocs/)
 - [Apache Flink Documentation](https://flink.apache.org/docs/stable/)
-- [Designing Event-Driven Systems (Free O'Reilly Book)](https://www.confluent.io/resources/ebook/designing-event-driven-systems/)
-- [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/)
-- [Kafka Streams in Action](https://www.manning.com/books/kafka-streams-in-action)
+- [Flink Kafka Connector](https://nightlies.apache.org/flink/flink-docs-stable/docs/connectors/datastream/kafka/)
+
+### Tutorials & Courses
+
+- [Kafka Streams 101 Course](https://developer.confluent.io/learn-kafka/kafka-streams/get-started/) - Free Confluent course
+- [Apache Flink Hands-On Training](https://flink.apache.org/training.html)
+- [Stream Processing Fundamentals](https://www.confluent.io/learn/stream-processing/)
+- [Building Streaming Applications Tutorial](https://kafka.apache.org/documentation/streams/tutorial)
+
+### Books & Guides
+
+- [Designing Event-Driven Systems](https://www.confluent.io/resources/ebook/designing-event-driven-systems/) - Free O'Reilly book by Ben Stopford
+- [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/) - Fabian Hueske & Vasiliki Kalavri
+- [Kafka Streams in Action](https://www.manning.com/books/kafka-streams-in-action) - Bill Bejeck
+- [Mastering Kafka Streams](https://www.oreilly.com/library/view/mastering-kafka-streams/9781492062486/) - Mitch Seymour
+
+### Advanced Topics
+
+- [Kafka Streams State Stores](https://kafka.apache.org/documentation/streams/developer-guide/processor-api.html#state-stores)
+- [Flink State Management](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/datastream/fault-tolerance/state/)
+- [Exactly-Once Semantics in Kafka Streams](https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/)
+- [Windowing Strategies Comparison](https://www.confluent.io/blog/windowing-in-kafka-streams/)
+
+---
+
+!!! info "Course Attribution"
+This guide is based on content from Apache Kafka Streams documentation, Apache Flink documentation, Confluent tutorials, and industry best practices.

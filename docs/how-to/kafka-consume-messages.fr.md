@@ -995,11 +995,26 @@ Voici un exemple de consumer prêt pour la production :
 
 ## Ressources Supplémentaires
 
-- [Documentation Apache Kafka Consumer](https://kafka.apache.org/documentation/#consumerapi)
-- [Configurations Kafka Consumer](https://kafka.apache.org/documentation/#consumerconfigs)
-- [Protocole Consumer Group](https://kafka.apache.org/documentation/#impl_consumerRebalance)
+### Documentation Officielle
+
+- [Documentation API Apache Kafka Consumer](https://kafka.apache.org/documentation/#consumerapi)
+- [Référence Configuration Kafka Consumer](https://kafka.apache.org/documentation/#consumerconfigs)
+- [Protocole Consumer Group - Détails Internes](https://kafka.apache.org/documentation/#impl_consumerRebalance)
+- [Guide Configuration Consumer Confluent](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html)
+
+### Tutoriels & Cours
+
+- [Cours Kafka Consumer 101](https://developer.confluent.io/learn-kafka/apache-kafka/consumers/) - Cours gratuit Confluent
+- [Exercice Interactif Kafka Consumer](https://developer.confluent.io/courses/apache-kafka/exercise-kafka-consumers/)
+- [Meilleures Pratiques Consumer](https://www.confluent.io/blog/kafka-consumer-best-practices/)
+
+### Sujets Avancés
+
+- [Optimisation Performance Consumer](https://docs.confluent.io/platform/current/kafka/deployment.html#consumer-performance-tuning)
+- [Rééquilibrage Consumer Group - Analyse Approfondie](https://www.confluent.io/blog/cooperative-rebalancing-in-kafka-streams-consumer-ksqldb/)
+- [Stratégies de Gestion des Offsets](https://www.confluent.io/blog/guide-to-apache-kafka-offsets/)
 
 ---
 
-!!! info "Pratique Hands-On"
-Essayez l'[exercice interactif Kafka Consumer](https://developer.confluent.io/courses/apache-kafka/exercise-kafka-consumers/) de Confluent pour pratiquer ces concepts.
+!!! info "Attribution du Cours"
+Ce guide est basé sur le contenu du [cours Apache Kafka 101](https://developer.confluent.io/courses/apache-kafka/consumers/) de Confluent et la documentation officielle Apache Kafka.

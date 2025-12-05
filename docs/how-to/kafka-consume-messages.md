@@ -995,11 +995,26 @@ Here's a production-ready consumer example:
 
 ## Additional Resources
 
-- [Apache Kafka Consumer Documentation](https://kafka.apache.org/documentation/#consumerapi)
-- [Kafka Consumer Configurations](https://kafka.apache.org/documentation/#consumerconfigs)
-- [Consumer Group Protocol](https://kafka.apache.org/documentation/#impl_consumerRebalance)
+### Official Documentation
+
+- [Apache Kafka Consumer API Documentation](https://kafka.apache.org/documentation/#consumerapi)
+- [Kafka Consumer Configuration Reference](https://kafka.apache.org/documentation/#consumerconfigs)
+- [Consumer Group Protocol Internals](https://kafka.apache.org/documentation/#impl_consumerRebalance)
+- [Confluent Consumer Configuration Guide](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html)
+
+### Tutorials & Courses
+
+- [Kafka Consumer 101 Course](https://developer.confluent.io/learn-kafka/apache-kafka/consumers/) - Free Confluent course
+- [Interactive Kafka Consumer Exercise](https://developer.confluent.io/courses/apache-kafka/exercise-kafka-consumers/)
+- [Consumer Best Practices](https://www.confluent.io/blog/kafka-consumer-best-practices/)
+
+### Advanced Topics
+
+- [Consumer Performance Tuning](https://docs.confluent.io/platform/current/kafka/deployment.html#consumer-performance-tuning)
+- [Consumer Group Rebalancing Deep Dive](https://www.confluent.io/blog/cooperative-rebalancing-in-kafka-streams-consumer-ksqldb/)
+- [Offset Management Strategies](https://www.confluent.io/blog/guide-to-apache-kafka-offsets/)
 
 ---
 
-!!! info "Hands-On Practice"
-Try the interactive [Kafka Consumer exercise](https://developer.confluent.io/courses/apache-kafka/exercise-kafka-consumers/) from Confluent to practice these concepts.
+!!! info "Course Attribution"
+This guide is based on content from the [Apache Kafka 101 course](https://developer.confluent.io/courses/apache-kafka/consumers/) by Confluent and official Apache Kafka documentation.
