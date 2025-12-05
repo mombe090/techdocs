@@ -7,13 +7,13 @@ Ceci est votre site de documentation personnel construit avec **Material for MkD
 Material for MkDocs offre de nombreuses fonctionnalités intéressantes :
 
 !!! tip "Design Magnifique"
-    Un design moderne et réactif qui fonctionne sur tous les appareils avec un changement automatique entre les modes clair et sombre.
+Un design moderne et réactif qui fonctionne sur tous les appareils avec un changement automatique entre les modes clair et sombre.
 
 !!! example "Support de Contenu Riche"
-    Support pour les avertissements, blocs de code, onglets, diagrammes, équations mathématiques et bien plus encore.
+Support pour les avertissements, blocs de code, onglets, diagrammes, équations mathématiques et bien plus encore.
 
 !!! note "Recherche Rapide"
-    Fonctionnalité de recherche intégrée avec surbrillance et suggestions.
+Fonctionnalité de recherche intégrée avec surbrillance et suggestions.
 
 ## Démarrage
 
@@ -42,10 +42,10 @@ def bonjour_monde():
 Vous pouvez utiliser différents types d'avertissements :
 
 !!! warning "Important"
-    N'oubliez pas de mettre à jour votre configuration dans `mkdocs.yml` !
+N'oubliez pas de mettre à jour votre configuration dans `mkdocs.yml` !
 
 !!! success "Astuce Pro"
-    Utilisez `mkdocs serve` pour prévisualiser les changements en temps réel.
+Utilisez `mkdocs serve` pour prévisualiser les changements en temps réel.
 
 ### Listes de Tâches
 
@@ -56,12 +56,12 @@ Vous pouvez utiliser différents types d'avertissements :
 
 ### Tableaux
 
-| Fonctionnalité | Description |
-|----------------|-------------|
-| Onglets | Organiser le contenu en onglets |
-| Mermaid | Créer des diagrammes |
-| Math | Support mathématique LaTeX |
-| Icônes | Plus de 10 000 icônes disponibles |
+| Fonctionnalité | Description                       |
+| -------------- | --------------------------------- |
+| Onglets        | Organiser le contenu en onglets   |
+| Mermaid        | Créer des diagrammes              |
+| Math           | Support mathématique LaTeX        |
+| Icônes         | Plus de 10 000 icônes disponibles |
 
 ## Prochaines Étapes
 

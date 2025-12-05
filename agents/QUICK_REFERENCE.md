@@ -2,12 +2,12 @@
 
 ## File Naming Convention
 
-| Language | File Name Pattern | Example |
-|----------|------------------|---------|
-| English (default) | `filename.md` | `index.md` |
-| French | `filename.fr.md` | `index.fr.md` |
-| Spanish | `filename.es.md` | `index.es.md` |
-| German | `filename.de.md` | `index.de.md` |
+| Language          | File Name Pattern | Example       |
+| ----------------- | ----------------- | ------------- |
+| English (default) | `filename.md`     | `index.md`    |
+| French            | `filename.fr.md`  | `index.fr.md` |
+| Spanish           | `filename.es.md`  | `index.es.md` |
+| German            | `filename.de.md`  | `index.de.md` |
 
 ## Commands
 
@@ -54,23 +54,27 @@ techdocs/
 ## Adding New Content
 
 ### 1. Create English Page
+
 ```bash
 echo "# New Feature" > docs/features/new-feature.md
 ```
 
 ### 2. Create French Translation
+
 ```bash
 echo "# Nouvelle Fonctionnalité" > docs/features/new-feature.fr.md
 ```
 
 ### 3. Add to Navigation (mkdocs.yml)
+
 ```yaml
 nav:
   - Features:
-    - New Feature: features/new-feature.md
+      - New Feature: features/new-feature.md
 ```
 
 ### 4. Add French Translation for Nav
+
 ```yaml
 plugins:
   - i18n:
@@ -86,7 +90,7 @@ plugins:
 ```yaml
 plugins:
   - search:
-      # ... search config
+    # ... search config
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
@@ -117,27 +121,28 @@ When adding a new page:
 
 ## Common Navigation Translations
 
-| English | French (Français) |
-|---------|------------------|
-| Home | Accueil |
-| Getting Started | Démarrage |
-| Guides | Guides |
-| Tutorials | Tutoriels |
-| Reference | Référence |
-| API | API |
-| Examples | Exemples |
-| Installation | Installation |
-| Configuration | Configuration |
-| Deployment | Déploiement |
-| Troubleshooting | Dépannage |
-| FAQ | FAQ |
-| Contributing | Contribuer |
-| Changelog | Journal des modifications |
-| License | Licence |
+| English         | French (Français)         |
+| --------------- | ------------------------- |
+| Home            | Accueil                   |
+| Getting Started | Démarrage                 |
+| Guides          | Guides                    |
+| Tutorials       | Tutoriels                 |
+| Reference       | Référence                 |
+| API             | API                       |
+| Examples        | Exemples                  |
+| Installation    | Installation              |
+| Configuration   | Configuration             |
+| Deployment      | Déploiement               |
+| Troubleshooting | Dépannage                 |
+| FAQ             | FAQ                       |
+| Contributing    | Contribuer                |
+| Changelog       | Journal des modifications |
+| License         | Licence                   |
 
 ## Supported Locales
 
 Common locale codes:
+
 - `en` - English
 - `fr` - French (Français)
 - `es` - Spanish (Español)
@@ -151,32 +156,36 @@ Common locale codes:
 
 ## URL Structure
 
-| Language | URL Pattern | Example |
-|----------|-------------|---------|
-| English (default) | `/path/` | `https://site.com/guides/formatting/` |
-| French | `/fr/path/` | `https://site.com/fr/guides/formatting/` |
-| Spanish | `/es/path/` | `https://site.com/es/guides/formatting/` |
+| Language          | URL Pattern | Example                                  |
+| ----------------- | ----------- | ---------------------------------------- |
+| English (default) | `/path/`    | `https://site.com/guides/formatting/`    |
+| French            | `/fr/path/` | `https://site.com/fr/guides/formatting/` |
+| Spanish           | `/es/path/` | `https://site.com/es/guides/formatting/` |
 
 ## Tips
 
 ### Partial Translations
+
 You don't need to translate everything at once. With `fallback_to_default: true`, missing translations will show the English version.
 
 ### Translation Status
+
 Add this to pages being translated:
 
 ```markdown
 !!! info "Translation Status"
-    🇫🇷 This page is fully translated.
-    
+🇫🇷 This page is fully translated.
+
 # or
 
 !!! warning "Traduction en Cours"
-    Cette page est en cours de traduction.
+Cette page est en cours de traduction.
 ```
 
 ### Testing
+
 Always test both language versions:
+
 ```bash
 # Start dev server
 uv run mkdocs serve
@@ -187,4 +196,5 @@ uv run mkdocs serve
 ```
 
 ### Search
+
 Search automatically works in all languages when you visit that language's pages. French search uses French, English search uses English.

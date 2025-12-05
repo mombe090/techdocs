@@ -139,14 +139,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Tutorials:
-    - Getting Started: tutorials/getting-started.md
+      - Getting Started: tutorials/getting-started.md
   - How-to Guides:
-    - Add New Pages: how-to/add-new-pages.md
-    - Customize Colors: how-to/customize-colors.md
+      - Add New Pages: how-to/add-new-pages.md
+      - Customize Colors: how-to/customize-colors.md
   - Reference:
-    - Formatting: reference/formatting.md
-    - Icons & Emojis: reference/icons.md
+      - Formatting: reference/formatting.md
+      - Icons & Emojis: reference/icons.md
   - Explanation:
-    - Documentation Architecture: explanation/documentation-architecture.md
-    - Catppuccin Colors: explanation/catppuccin-colors.md
+      - Documentation Architecture: explanation/documentation-architecture.md
+      - Catppuccin Colors: explanation/catppuccin-colors.md
   - Tips & Tricks: tips-and-tricks.md

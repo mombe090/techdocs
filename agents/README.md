@@ -5,9 +5,11 @@ This directory contains documentation about the setup and configuration of this 
 ## Contents
 
 ### 📚 [MULTILINGUAL_SETUP.md](./MULTILINGUAL_SETUP.md)
+
 **Complete guide to the multilingual configuration**
 
 Detailed documentation covering:
+
 - How the i18n plugin works
 - File structure and naming conventions
 - Configuration walkthrough
@@ -21,9 +23,11 @@ Detailed documentation covering:
 ---
 
 ### ⚡ [QUICK_REFERENCE.md](./QUICK_REFERENCE.md)
+
 **Quick reference guide**
 
 Fast lookup for:
+
 - File naming patterns
 - Common commands
 - Directory structure
@@ -47,7 +51,7 @@ This documentation site supports **English** and **French** using the `mkdocs-st
 ✅ **Translated Navigation** - Menu items auto-translate  
 ✅ **Multilingual Search** - Search works in all languages  
 ✅ **Fallback Support** - Shows English if translation missing  
-✅ **Material Theme Integration** - Seamless integration with Material for MkDocs  
+✅ **Material Theme Integration** - Seamless integration with Material for MkDocs
 
 ### Quick Start
 

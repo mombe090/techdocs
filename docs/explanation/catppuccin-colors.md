@@ -7,6 +7,7 @@ This article explains what Catppuccin is, why it's used in this documentation, a
 Catppuccin is a community-driven pastel color palette designed for comfort and aesthetics. Created in 2021, it has become one of the most popular color schemes in developer tools and applications.
 
 The palette comes in four flavors:
+
 - **Latte** - Light theme with warm tones
 - **Frappé** - Light-medium theme
 - **Macchiato** - Medium-dark theme
@@ -19,6 +20,7 @@ The palette comes in four flavors:
 Unlike high-contrast themes that use pure whites and blacks, Catppuccin uses softer, pastel colors. This reduces eye strain during extended reading or coding sessions.
 
 The colors are carefully calibrated to:
+
 - Provide sufficient contrast for readability
 - Avoid harsh brightness that causes fatigue
 - Create a pleasant, aesthetically consistent experience

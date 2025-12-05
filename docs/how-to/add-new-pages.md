@@ -31,8 +31,8 @@ To control where the page appears in the navigation menu:
 nav:
   - Home: index.md
   - Tutorials:
-    - Getting Started: tutorials/getting-started.md
-  - Your New Page: my-new-page.md  # Add here
+      - Getting Started: tutorials/getting-started.md
+  - Your New Page: my-new-page.md # Add here
 ```
 
 ## Organize in Subdirectories
@@ -56,8 +56,8 @@ touch docs/guides/installation.md
 ```yaml
 nav:
   - Guides:
-    - Installation: guides/installation.md
-    - Configuration: guides/configuration.md
+      - Installation: guides/installation.md
+      - Configuration: guides/configuration.md
 ```
 
 ## Add to Diátaxis Structure
@@ -65,7 +65,7 @@ nav:
 Follow the Diátaxis framework by placing pages in appropriate directories:
 
 - `tutorials/` - Learning-oriented, hands-on lessons
-- `how-to/` - Goal-oriented, problem-solving guides  
+- `how-to/` - Goal-oriented, problem-solving guides
 - `reference/` - Information-oriented, technical descriptions
 - `explanation/` - Understanding-oriented, conceptual discussion
 
@@ -97,4 +97,4 @@ uv run mkdocs serve
 3. Verify it appears in the navigation menu as expected
 
 !!! note
-    Pages not listed in `nav` will still be accessible via direct URL but won't appear in the menu.
+Pages not listed in `nav` will still be accessible via direct URL but won't appear in the menu.

@@ -54,7 +54,7 @@ Perfect for: Power users, productivity boosts, discovering hidden features
 
 This site uses the **Catppuccin Mocha** color palette, a community-driven pastel theme designed for comfort and aesthetics:
 
-- 🌙 **Dark Mode**: Sapphire accent (`#74c7ec`) 
+- 🌙 **Dark Mode**: Sapphire accent (`#74c7ec`)
 - ☀️ **Light Mode**: Base primary (`#1e1e2e`)
 
 Toggle between themes using the icon in the header.
@@ -62,13 +62,13 @@ Toggle between themes using the icon in the header.
 ### Features
 
 !!! tip "Bilingual Support"
-    Full documentation available in English and Français. Switch languages using the selector in the header.
+Full documentation available in English and Français. Switch languages using the selector in the header.
 
 !!! example "Modern Stack"
-    Built with MkDocs Material, featuring responsive design, instant search, and rich content support.
+Built with MkDocs Material, featuring responsive design, instant search, and rich content support.
 
 !!! note "Organized with Diátaxis"
-    Documentation structure follows the [Diátaxis framework](https://diataxis.fr/) for clarity and usability.
+Documentation structure follows the [Diátaxis framework](https://diataxis.fr/) for clarity and usability.
 
 ---
 

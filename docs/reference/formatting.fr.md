@@ -7,7 +7,7 @@ Cette page démontre les différentes options de formatage disponibles dans Mate
 Vous pouvez utiliser différentes options de formatage de texte :
 
 - **Texte en gras** avec `**gras**`
-- *Texte en italique* avec `*italique*`
+- _Texte en italique_ avec `*italique*`
 - ~~Texte barré~~ avec `~~texte~~`
 - ==Texte surligné== avec `==texte==`
 - H~2~O indice avec `H~2~O`
@@ -72,43 +72,43 @@ def saluer(nom):
 ## Avertissements
 
 !!! note
-    Ceci est un avertissement de note.
+Ceci est un avertissement de note.
 
 !!! abstract
-    Ceci est un avertissement abstrait.
+Ceci est un avertissement abstrait.
 
 !!! info
-    Ceci est un avertissement d'information.
+Ceci est un avertissement d'information.
 
 !!! tip
-    Ceci est un avertissement d'astuce.
+Ceci est un avertissement d'astuce.
 
 !!! success
-    Ceci est un avertissement de succès.
+Ceci est un avertissement de succès.
 
 !!! question
-    Ceci est un avertissement de question.
+Ceci est un avertissement de question.
 
 !!! warning
-    Ceci est un avertissement d'alerte.
+Ceci est un avertissement d'alerte.
 
 !!! failure
-    Ceci est un avertissement d'échec.
+Ceci est un avertissement d'échec.
 
 !!! danger
-    Ceci est un avertissement de danger.
+Ceci est un avertissement de danger.
 
 !!! bug
-    Ceci est un avertissement de bug.
+Ceci est un avertissement de bug.
 
 !!! example
-    Ceci est un avertissement d'exemple.
+Ceci est un avertissement d'exemple.
 
 !!! quote
-    Ceci est un avertissement de citation.
+Ceci est un avertissement de citation.
 
 ??? note "Avertissement Pliable"
-    Cet avertissement est pliable !
+Cet avertissement est pliable !
 
 ## Listes
 
@@ -116,8 +116,8 @@ def saluer(nom):
 
 - Élément 1
 - Élément 2
-    - Élément imbriqué 2.1
-    - Élément imbriqué 2.2
+  - Élément imbriqué 2.1
+  - Élément imbriqué 2.2
 - Élément 3
 
 ### Listes Ordonnées
@@ -125,8 +125,8 @@ def saluer(nom):
 1. Premier élément
 2. Deuxième élément
 3. Troisième élément
-    1. Élément imbriqué 3.1
-    2. Élément imbriqué 3.2
+   1. Élément imbriqué 3.1
+   2. Élément imbriqué 3.2
 
 ### Listes de Tâches
 

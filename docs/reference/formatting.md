@@ -7,7 +7,7 @@ This page demonstrates various formatting options available in Material for MkDo
 You can use various text formatting options:
 
 - **Bold text** with `**bold**`
-- *Italic text* with `*italic*`
+- _Italic text_ with `*italic*`
 - ~~Strikethrough~~ with `~~text~~`
 - ==Highlighted text== with `==text==`
 - H~2~O subscript with `H~2~O`
@@ -72,43 +72,43 @@ def greet(name):
 ## Admonitions
 
 !!! note
-    This is a note admonition.
+This is a note admonition.
 
 !!! abstract
-    This is an abstract admonition.
+This is an abstract admonition.
 
 !!! info
-    This is an info admonition.
+This is an info admonition.
 
 !!! tip
-    This is a tip admonition.
+This is a tip admonition.
 
 !!! success
-    This is a success admonition.
+This is a success admonition.
 
 !!! question
-    This is a question admonition.
+This is a question admonition.
 
 !!! warning
-    This is a warning admonition.
+This is a warning admonition.
 
 !!! failure
-    This is a failure admonition.
+This is a failure admonition.
 
 !!! danger
-    This is a danger admonition.
+This is a danger admonition.
 
 !!! bug
-    This is a bug admonition.
+This is a bug admonition.
 
 !!! example
-    This is an example admonition.
+This is an example admonition.
 
 !!! quote
-    This is a quote admonition.
+This is a quote admonition.
 
 ??? note "Collapsible Admonition"
-    This admonition is collapsible!
+This admonition is collapsible!
 
 ## Lists
 
@@ -116,8 +116,8 @@ def greet(name):
 
 - Item 1
 - Item 2
-    - Nested item 2.1
-    - Nested item 2.2
+  - Nested item 2.1
+  - Nested item 2.2
 - Item 3
 
 ### Ordered Lists
@@ -125,8 +125,8 @@ def greet(name):
 1. First item
 2. Second item
 3. Third item
-    1. Nested item 3.1
-    2. Nested item 3.2
+   1. Nested item 3.1
+   2. Nested item 3.2
 
 ### Task Lists
 

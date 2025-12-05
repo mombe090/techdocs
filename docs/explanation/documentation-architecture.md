@@ -40,6 +40,7 @@ Diátaxis provides clarity for documentation authors:
 Tutorials are **lessons** that take users through a meaningful exercise. Think of teaching a child to cook - the goal isn't perfection, it's building confidence and familiarity.
 
 Characteristics:
+
 - Practical, hands-on exercises
 - Safe, reliable outcomes
 - Learning happens through doing
@@ -50,6 +51,7 @@ Characteristics:
 How-to guides are **recipes** for accomplishing specific goals. They assume competence and focus purely on getting things done.
 
 Characteristics:
+
 - Addresses real-world problems
 - Goal-oriented steps
 - Assumes basic competence
@@ -60,6 +62,7 @@ Characteristics:
 Reference material is the **map** of your system. It describes what things are and how they work, with precision and completeness.
 
 Characteristics:
+
 - Authoritative and accurate
 - Structured by the system itself
 - Dry, factual descriptions
@@ -70,6 +73,7 @@ Characteristics:
 Explanation provides the **bigger picture**. It discusses the "why" behind decisions, connects concepts, and deepens understanding.
 
 Characteristics:
+
 - Provides context and background
 - Makes connections
 - Discusses alternatives

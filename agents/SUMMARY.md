@@ -5,10 +5,12 @@ Your documentation site now supports **English** and **French** with automatic l
 ## ✅ What's Been Configured
 
 ### 1. Dependencies
+
 - ✅ `mkdocs-static-i18n` plugin installed
 - ✅ All required packages in `pyproject.toml`
 
 ### 2. Configuration
+
 - ✅ Language selector in site header
 - ✅ English (default) + French support
 - ✅ Automatic navigation translation
@@ -16,6 +18,7 @@ Your documentation site now supports **English** and **French** with automatic l
 - ✅ Fallback to English for missing translations
 
 ### 3. Content Structure
+
 ```
 docs/
 ├── index.md              ← English homepage
@@ -29,12 +32,14 @@ docs/
 ```
 
 ### 4. URL Structure
+
 - **English**: `http://127.0.0.1:8000/`
 - **French**: `http://127.0.0.1:8000/fr/`
 
 ## 🚀 How to Use
 
 ### View Your Site
+
 ```bash
 # Start the development server
 uv run mkdocs serve
@@ -45,11 +50,13 @@ uv run mkdocs serve
 ```
 
 ### Build for Production
+
 ```bash
 uv run mkdocs build
 ```
 
 Output:
+
 ```
 site/
 ├── index.html         ← English site
@@ -66,10 +73,13 @@ site/
 Three comprehensive guides have been created in the `agents/` directory:
 
 ### 1. README.md
+
 Overview and quick navigation to other docs
 
 ### 2. MULTILINGUAL_SETUP.md
+
 **Complete in-depth guide** covering:
+
 - How the i18n plugin works
 - File structure and conventions
 - Configuration details
@@ -79,7 +89,9 @@ Overview and quick navigation to other docs
 - Troubleshooting
 
 ### 3. QUICK_REFERENCE.md
+
 **Fast lookup guide** for:
+
 - File naming patterns
 - Commands
 - Adding new content
@@ -89,30 +101,33 @@ Overview and quick navigation to other docs
 
 ## 🎯 Key Features Enabled
 
-| Feature | Description |
-|---------|-------------|
-| 🌐 Language Selector | Automatic dropdown in header |
-| 🔄 URL-based Switching | Clean URLs: `/` and `/fr/` |
-| 🧭 Nav Translation | Menu items auto-translate |
-| 🔍 Multilingual Search | Search works in both languages |
-| 📝 Fallback Support | Shows English if translation missing |
-| 🎨 Material Integration | Seamless theme integration |
+| Feature                 | Description                          |
+| ----------------------- | ------------------------------------ |
+| 🌐 Language Selector    | Automatic dropdown in header         |
+| 🔄 URL-based Switching  | Clean URLs: `/` and `/fr/`           |
+| 🧭 Nav Translation      | Menu items auto-translate            |
+| 🔍 Multilingual Search  | Search works in both languages       |
+| 📝 Fallback Support     | Shows English if translation missing |
+| 🎨 Material Integration | Seamless theme integration           |
 
 ## 📝 Adding New Content
 
 **Workflow:**
 
 1. Create English page:
+
    ```bash
    echo "# New Page" > docs/new-page.md
    ```
 
 2. Create French translation:
+
    ```bash
    echo "# Nouvelle Page" > docs/new-page.fr.md
    ```
 
 3. Add to navigation in `mkdocs.yml`:
+
    ```yaml
    nav:
      - New Page: new-page.md
@@ -133,6 +148,7 @@ Overview and quick navigation to other docs
 All configuration is in: **`mkdocs.yml`**
 
 Key sections:
+
 ```yaml
 plugins:
   - i18n:
@@ -193,11 +209,13 @@ Your documentation site is now fully bilingual with a professional look and feel
 ---
 
 **Commands to remember:**
+
 ```bash
 uv run mkdocs serve   # Preview locally
 uv run mkdocs build   # Build for production
 ```
 
 **URLs to test:**
+
 - English: http://127.0.0.1:8000/
 - French: http://127.0.0.1:8000/fr/

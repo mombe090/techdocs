@@ -39,6 +39,9 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Node modules (for pre-commit hooks)
+node_modules/
+
 # Project specific
 note.txt
 main.py

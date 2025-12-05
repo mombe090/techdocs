@@ -8,6 +8,7 @@ uv run mkdocs serve
 ```
 
 Then open your browser:
+
 - **English**: http://127.0.0.1:8000/
 - **French**: http://127.0.0.1:8000/fr/
 
@@ -71,28 +72,33 @@ Choose your path based on what you need:
 ## 📖 Documentation Guide
 
 ### agents/README.md
+
 - **Purpose**: Overview and navigation
 - **When to read**: First time, to understand what's available
 - **Time**: 2 minutes
 
 ### agents/SUMMARY.md
+
 - **Purpose**: What's been configured and why
 - **When to read**: Want to see the complete setup
 - **Time**: 5 minutes
 
 ### agents/MULTILINGUAL_SETUP.md
+
 - **Purpose**: Complete technical guide
 - **When to read**: Need to understand the i18n system
 - **Topics**: Plugin details, configuration, best practices
 - **Time**: 15 minutes
 
 ### agents/QUICK_REFERENCE.md
+
 - **Purpose**: Fast lookups and common tasks
 - **When to read**: Daily usage, need quick answers
 - **Topics**: Commands, patterns, translations
 - **Time**: Quick lookup
 
 ### agents/GETTING_STARTED.md
+
 - **Purpose**: This file - quick start guide
 - **When to read**: Right now!
 - **Time**: 3 minutes
@@ -131,12 +137,13 @@ uv run mkdocs serve
 ### Task 2: Customize Colors
 
 Edit `mkdocs.yml`:
+
 ```yaml
 theme:
   palette:
     - scheme: default
-      primary: blue      # Change this
-      accent: cyan       # And this
+      primary: blue # Change this
+      accent: cyan # And this
 ```
 
 Available colors: red, pink, purple, indigo, blue, cyan, teal, green, lime, yellow, amber, orange, deep orange
@@ -144,9 +151,10 @@ Available colors: red, pink, purple, indigo, blue, cyan, teal, green, lime, yell
 ### Task 3: Change Site Name
 
 Edit `mkdocs.yml`:
+
 ```yaml
-site_name: My Amazing Docs  # Change this
-site_author: Your Name      # And this
+site_name: My Amazing Docs # Change this
+site_author: Your Name # And this
 ```
 
 ### Task 4: Add More Languages
@@ -155,20 +163,22 @@ See `agents/MULTILINGUAL_SETUP.md` → "Adding More Languages" section
 
 ## 🔍 Where to Find Things
 
-| I want to... | Look here |
-|--------------|-----------|
-| Understand the setup | `agents/SUMMARY.md` |
-| Learn how i18n works | `agents/MULTILINGUAL_SETUP.md` |
-| Quick command reference | `agents/QUICK_REFERENCE.md` |
-| Add new content | `agents/QUICK_REFERENCE.md` → "Adding New Content" |
-| Change colors/fonts | `mkdocs.yml` → `theme:` section |
-| Add a new language | `agents/MULTILINGUAL_SETUP.md` → "Adding More Languages" |
-| Fix issues | `agents/MULTILINGUAL_SETUP.md` → "Troubleshooting" |
+| I want to...            | Look here                                                |
+| ----------------------- | -------------------------------------------------------- |
+| Understand the setup    | `agents/SUMMARY.md`                                      |
+| Learn how i18n works    | `agents/MULTILINGUAL_SETUP.md`                           |
+| Quick command reference | `agents/QUICK_REFERENCE.md`                              |
+| Add new content         | `agents/QUICK_REFERENCE.md` → "Adding New Content"       |
+| Change colors/fonts     | `mkdocs.yml` → `theme:` section                          |
+| Add a new language      | `agents/MULTILINGUAL_SETUP.md` → "Adding More Languages" |
+| Fix issues              | `agents/MULTILINGUAL_SETUP.md` → "Troubleshooting"       |
 
 ## 💡 Tips
 
 ### Tip 1: Test Both Languages
+
 Always check both language versions:
+
 ```bash
 uv run mkdocs serve
 # Visit http://127.0.0.1:8000/     (English)
@@ -176,17 +186,21 @@ uv run mkdocs serve
 ```
 
 ### Tip 2: Partial Translations Are OK
+
 You don't need to translate everything immediately. If a French translation is missing, the English version will be shown automatically.
 
 ### Tip 3: Use Live Reload
+
 Keep `mkdocs serve` running while you edit. Changes appear instantly in your browser!
 
 ### Tip 4: Search Works Per Language
+
 Search automatically uses the appropriate language based on which version you're viewing.
 
 ## 🎨 Example Customizations
 
 ### Change to a Green Theme
+
 ```yaml
 theme:
   palette:
@@ -196,15 +210,17 @@ theme:
 ```
 
 ### Enable More Features
+
 ```yaml
 theme:
   features:
-    - navigation.instant      # Faster page loads
-    - navigation.tracking     # Update URL on scroll
-    - toc.integrate          # Merge TOC with sidebar
+    - navigation.instant # Faster page loads
+    - navigation.tracking # Update URL on scroll
+    - toc.integrate # Merge TOC with sidebar
 ```
 
 ### Add Social Links
+
 ```yaml
 extra:
   social:

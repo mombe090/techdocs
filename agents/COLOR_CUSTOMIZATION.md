@@ -7,12 +7,14 @@ Your site now uses **Catppuccin Latte Lavender** for light mode and **Teal** for
 ### Configuration
 
 **Light Mode - Catppuccin Latte Lavender:**
+
 ```css
---md-primary-fg-color: #7287fd;        /* Catppuccin Latte Lavender */
---md-accent-fg-color: #7287fd;          /* Catppuccin Latte Lavender */
+--md-primary-fg-color: #7287fd; /* Catppuccin Latte Lavender */
+--md-accent-fg-color: #7287fd; /* Catppuccin Latte Lavender */
 ```
 
 **Dark Mode - Teal:**
+
 ```yaml
 primary: teal
 accent: teal
@@ -21,13 +23,15 @@ accent: teal
 ## What Changed
 
 ### Light Mode
+
 - **Primary color**: Catppuccin Latte Lavender (`#7287fd`)
 - **Accent color**: Catppuccin Latte Lavender (`#7287fd`)
 - **RGB**: `rgb(114, 135, 253)`
 - **HSL**: `hsl(231deg, 97%, 72%)`
 - **Style**: Soft purple-blue, dreamy and elegant
 
-### Dark Mode  
+### Dark Mode
+
 - **Primary color**: Teal
 - **Accent color**: Teal
 - **Style**: Modern, balanced
@@ -37,6 +41,7 @@ accent: teal
 From the official [Catppuccin Latte palette](https://catppuccin.com/palette/):
 
 **Lavender** is one of the 26 eye-candy colors in the Latte (light) flavor. It provides:
+
 - ✅ Soft purple-blue hue
 - ✅ High visibility without being harsh
 - ✅ Elegant and modern appearance
@@ -46,15 +51,18 @@ From the official [Catppuccin Latte palette](https://catppuccin.com/palette/):
 ## Preview
 
 Run to see the changes:
+
 ```bash
 uv run mkdocs serve
 ```
 
 Toggle between light and dark modes using the theme switcher to see:
+
 - **Light mode**: Beautiful Catppuccin Latte Lavender
 - **Dark mode**: Modern Teal
 
 The lavender will be visible in:
+
 - Navigation header
 - Active menu items
 - All links throughout content
@@ -80,10 +88,10 @@ Located at `docs/stylesheets/extra.css`:
 ```css
 /* Catppuccin Latte Lavender for Light Mode */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #7287fd;        /* Catppuccin Latte Lavender */
-  --md-primary-fg-color--light: #b4befe;  /* Lighter shade */
-  --md-primary-fg-color--dark: #5c6ef5;   /* Darker shade */
-  --md-accent-fg-color: #7287fd;          /* Catppuccin Latte Lavender */
+  --md-primary-fg-color: #7287fd; /* Catppuccin Latte Lavender */
+  --md-primary-fg-color--light: #b4befe; /* Lighter shade */
+  --md-primary-fg-color--dark: #5c6ef5; /* Darker shade */
+  --md-accent-fg-color: #7287fd; /* Catppuccin Latte Lavender */
 }
 ```
 
@@ -91,46 +99,50 @@ Located at `docs/stylesheets/extra.css`:
 
 Want to try other Catppuccin colors? Here's the full Latte palette:
 
-| Color | Hex | RGB | Usage |
-|-------|-----|-----|-------|
+| Color        | Hex       | RGB                  | Usage                            |
+| ------------ | --------- | -------------------- | -------------------------------- |
 | **Lavender** | `#7287fd` | `rgb(114, 135, 253)` | **Current** - Dreamy purple-blue |
-| Blue | `#1e66f5` | `rgb(30, 102, 245)` | Vibrant blue |
-| Sapphire | `#209fb5` | `rgb(32, 159, 181)` | Cyan-blue |
-| Sky | `#04a5e5` | `rgb(4, 165, 229)` | Bright sky blue |
-| Teal | `#179299` | `rgb(23, 146, 153)` | Blue-green |
-| Green | `#40a02b` | `rgb(64, 160, 43)` | Fresh green |
-| Yellow | `#df8e1d` | `rgb(223, 142, 29)` | Warm yellow |
-| Peach | `#fe640b` | `rgb(254, 100, 11)` | Orange accent |
-| Red | `#d20f39` | `rgb(210, 15, 57)` | Bold red |
-| Maroon | `#e64553` | `rgb(230, 69, 83)` | Deep red |
-| Pink | `#ea76cb` | `rgb(234, 118, 203)` | Soft pink |
-| Mauve | `#8839ef` | `rgb(136, 57, 239)` | Rich purple |
-| Rosewater | `#dc8a78` | `rgb(220, 138, 120)` | Warm rose |
-| Flamingo | `#dd7878` | `rgb(221, 120, 120)` | Coral pink |
+| Blue         | `#1e66f5` | `rgb(30, 102, 245)`  | Vibrant blue                     |
+| Sapphire     | `#209fb5` | `rgb(32, 159, 181)`  | Cyan-blue                        |
+| Sky          | `#04a5e5` | `rgb(4, 165, 229)`   | Bright sky blue                  |
+| Teal         | `#179299` | `rgb(23, 146, 153)`  | Blue-green                       |
+| Green        | `#40a02b` | `rgb(64, 160, 43)`   | Fresh green                      |
+| Yellow       | `#df8e1d` | `rgb(223, 142, 29)`  | Warm yellow                      |
+| Peach        | `#fe640b` | `rgb(254, 100, 11)`  | Orange accent                    |
+| Red          | `#d20f39` | `rgb(210, 15, 57)`   | Bold red                         |
+| Maroon       | `#e64553` | `rgb(230, 69, 83)`   | Deep red                         |
+| Pink         | `#ea76cb` | `rgb(234, 118, 203)` | Soft pink                        |
+| Mauve        | `#8839ef` | `rgb(136, 57, 239)`  | Rich purple                      |
+| Rosewater    | `#dc8a78` | `rgb(220, 138, 120)` | Warm rose                        |
+| Flamingo     | `#dd7878` | `rgb(221, 120, 120)` | Coral pink                       |
 
 ## Try Other Colors
 
 ### Switch to Sapphire (Cyan-Blue)
+
 Edit `docs/stylesheets/extra.css`:
+
 ```css
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #209fb5;  /* Sapphire */
+  --md-primary-fg-color: #209fb5; /* Sapphire */
   --md-accent-fg-color: #209fb5;
 }
 ```
 
 ### Switch to Mauve (Purple)
+
 ```css
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #8839ef;  /* Mauve */
+  --md-primary-fg-color: #8839ef; /* Mauve */
   --md-accent-fg-color: #8839ef;
 }
 ```
 
 ### Switch to Pink
+
 ```css
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #ea76cb;  /* Pink */
+  --md-primary-fg-color: #ea76cb; /* Pink */
   --md-accent-fg-color: #ea76cb;
 }
 ```
@@ -142,12 +154,13 @@ Want to use Catppuccin Mocha colors for dark mode?
 ```css
 /* Catppuccin Mocha Lavender for dark mode */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #b4befe;  /* Mocha Lavender */
+  --md-primary-fg-color: #b4befe; /* Mocha Lavender */
   --md-accent-fg-color: #b4befe;
 }
 ```
 
 Or try other Mocha colors:
+
 - Mocha Lavender: `#b4befe`
 - Mocha Blue: `#89b4fa`
 - Mocha Sapphire: `#74c7ec`
@@ -191,6 +204,7 @@ uv run mkdocs serve
 To go back to Material default:
 
 1. Remove/comment out in `mkdocs.yml`:
+
 ```yaml
 # extra_css:
 #   - stylesheets/extra.css
@@ -200,7 +214,8 @@ To go back to Material default:
 
 ---
 
-**Current Status**: 
+**Current Status**:
+
 - ✅ Catppuccin Latte Lavender for light mode
 - ✅ Teal for dark mode
 - ✅ Custom CSS implementation

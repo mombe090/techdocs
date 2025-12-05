@@ -53,19 +53,19 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - i18n:
-      docs_structure: suffix          # Use .fr.md, .es.md suffix pattern
-      fallback_to_default: true       # Fall back to English if translation missing
-      reconfigure_material: true      # Integrate with Material theme
-      reconfigure_search: true        # Enable multilingual search
+      docs_structure: suffix # Use .fr.md, .es.md suffix pattern
+      fallback_to_default: true # Fall back to English if translation missing
+      reconfigure_material: true # Integrate with Material theme
+      reconfigure_search: true # Enable multilingual search
       languages:
         - locale: en
-          default: true               # English is default language
+          default: true # English is default language
           name: English
           build: true
         - locale: fr
           name: Français
           build: true
-          nav_translations:           # Translate navigation items
+          nav_translations: # Translate navigation items
             Home: Accueil
             Guides: Guides
             Formatting: Formatage
@@ -86,16 +86,19 @@ plugins:
 ### Method 1: Create Language-Specific Files
 
 1. **Create English version** (default):
+
    ```bash
    echo "# My Page" > docs/my-page.md
    ```
 
 2. **Create French version**:
+
    ```bash
    echo "# Ma Page" > docs/my-page.fr.md
    ```
 
 3. **Add to navigation** in `mkdocs.yml`:
+
    ```yaml
    nav:
      - My Page: my-page.md
@@ -136,6 +139,7 @@ uv run mkdocs serve
 ```
 
 This will:
+
 - Serve English at: `http://127.0.0.1:8000/`
 - Serve French at: `http://127.0.0.1:8000/fr/`
 
@@ -146,6 +150,7 @@ uv run mkdocs build
 ```
 
 Output structure:
+
 ```
 site/
 ├── index.html              # English homepage
@@ -165,6 +170,7 @@ site/
 To add Spanish support:
 
 1. **Update mkdocs.yml**:
+
    ```yaml
    languages:
      - locale: en
@@ -229,7 +235,7 @@ French search uses French stop words and stemming algorithms.
 - **Mark incomplete translations** with admonitions:
   ```markdown
   !!! warning "Translation in Progress"
-      This page is being translated. Some content may still be in English.
+  This page is being translated. Some content may still be in English.
   ```
 
 ### 4. Testing
@@ -272,6 +278,7 @@ French search uses French stop words and stemming algorithms.
 ## Summary
 
 Your site now supports:
+
 - ✅ English (default language)
 - ✅ French (Français)
 - ✅ Automatic language selector in header
@@ -281,5 +288,6 @@ Your site now supports:
 - ✅ Clean URL structure (`/` for English, `/fr/` for French)
 
 To preview: `uv run mkdocs serve`
+
 - English: http://127.0.0.1:8000/
 - French: http://127.0.0.1:8000/fr/

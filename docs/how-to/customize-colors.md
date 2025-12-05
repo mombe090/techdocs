@@ -14,8 +14,8 @@ To change the primary and accent colors in `mkdocs.yml`:
 theme:
   palette:
     - scheme: default
-      primary: blue      # Change this
-      accent: indigo     # Change this
+      primary: blue # Change this
+      accent: indigo # Change this
 ```
 
 Available colors: `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey`, `black`, `white`.
@@ -29,8 +29,8 @@ For more control, use custom CSS with specific color codes:
 
 ```css
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #74c7ec;  /* Your custom color */
-  --md-accent-fg-color: #89b4fa;   /* Your custom accent */
+  --md-primary-fg-color: #74c7ec; /* Your custom color */
+  --md-accent-fg-color: #89b4fa; /* Your custom accent */
 }
 ```
 
@@ -85,4 +85,4 @@ uv run mkdocs serve
 4. Adjust the color codes as needed
 
 !!! tip
-    Use a color picker tool or visit [Catppuccin Palette](https://catppuccin.com/palette) to find your preferred colors.
+Use a color picker tool or visit [Catppuccin Palette](https://catppuccin.com/palette) to find your preferred colors.
