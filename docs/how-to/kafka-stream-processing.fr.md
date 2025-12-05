@@ -167,8 +167,6 @@ graph LR
     D --> G[Tableau de Bord Analytics]
     E --> H[Service Client]
 
-    style B fill:#89b4fa,stroke:#1e1e2e,stroke-width:2px
-    style A fill:#f38ba8,stroke:#1e1e2e,stroke-width:2px
 ```
 
 !!! tip "Quand Utiliser le Traitement de Flux" - **Analytique temps réel** - Tableaux de bord live, métriques, surveillance - **Actions pilotées par événements** - Détection de fraude, alertes, notifications - **Enrichissement de données** - Joindre des événements avec des données de référence en temps réel - **ETL continu** - Transformer et router les données entre systèmes - **Traitement d'événements complexes** - Détecter des patterns à travers plusieurs événements

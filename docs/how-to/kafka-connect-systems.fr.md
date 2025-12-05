@@ -185,12 +185,6 @@ graph LR
     SINK1 -->|Écrire| ES
     SINK1 -->|Écrire| DW
 
-    style SC1 fill:#64b5f6
-    style SC2 fill:#64b5f6
-    style SINK1 fill:#ffb74d
-    style T1 fill:#81c784
-    style T2 fill:#81c784
-    style T3 fill:#81c784
 ```
 
 ### Types de Connecteurs

@@ -167,8 +167,6 @@ graph LR
     D --> G[Analytics Dashboard]
     E --> H[Customer Service]
 
-    style B fill:#89b4fa,stroke:#1e1e2e,stroke-width:2px
-    style A fill:#f38ba8,stroke:#1e1e2e,stroke-width:2px
 ```
 
 !!! tip "When to Use Stream Processing" - **Real-time analytics** - Live dashboards, metrics, monitoring - **Event-driven actions** - Fraud detection, alerting, notifications - **Data enrichment** - Join events with reference data in real-time - **Continuous ETL** - Transform and route data between systems - **Complex event processing** - Detect patterns across multiple events

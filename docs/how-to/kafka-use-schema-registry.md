@@ -144,8 +144,6 @@ graph LR
     B -->|6. Return Schema| D
     D -->|7. Deserialize| D
 
-    style B fill:#89b4fa,stroke:#1e1e2e,stroke-width:2px
-    style C fill:#f38ba8,stroke:#1e1e2e,stroke-width:2px
 ```
 
 !!! tip "Schema Registry Benefits" - **Data Integrity:** Prevents incompatible data from entering topics - **Schema Evolution:** Supports adding/removing fields without breaking consumers - **Bandwidth Savings:** Messages only contain a small schema ID instead of full schema - **Compatibility Enforcement:** Multiple compatibility modes (backward, forward, full)

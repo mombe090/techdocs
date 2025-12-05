@@ -144,8 +144,6 @@ graph LR
     B -->|6. Retourner Schéma| D
     D -->|7. Désérialiser| D
 
-    style B fill:#89b4fa,stroke:#1e1e2e,stroke-width:2px
-    style C fill:#f38ba8,stroke:#1e1e2e,stroke-width:2px
 ```
 
 !!! tip "Avantages de Schema Registry" - **Intégrité des Données :** Empêche les données incompatibles d'entrer dans les topics - **Évolution du Schéma :** Supporte l'ajout/suppression de champs sans casser les consommateurs - **Économie de Bande Passante :** Les messages ne contiennent qu'un petit ID de schéma au lieu du schéma complet - **Application de Compatibilité :** Plusieurs modes de compatibilité (backward, forward, full)

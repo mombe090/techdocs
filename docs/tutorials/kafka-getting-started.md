@@ -46,8 +46,6 @@ graph LR
     D[Apache Kafka] --> E[Topics store EVENTS]
     E --> F[Append events as they happen]
 
-    style A fill:#e1f5ff
-    style D fill:#ffe1e1
 ```
 
 ### Real-Time Processing
@@ -107,8 +105,6 @@ graph TD
     C[Kafka Topic] -->|Append| D[New event added to end]
     D --> E[Previous events remain unchanged]
 
-    style A fill:#ffcccc
-    style C fill:#ccffcc
 ```
 
 ### Key Characteristics of Topics
@@ -125,10 +121,6 @@ graph LR
     C --> D[Message 3<br/>sensor:44<br/>temp:21°C]
     end
 
-    style A fill:#e3f2fd
-    style B fill:#e3f2fd
-    style C fill:#e3f2fd
-    style D fill:#e3f2fd
 ```
 
 ### Message Anatomy
@@ -145,11 +137,6 @@ graph TB
     E[Offset<br/>Position in partition]
     end
 
-    style A fill:#fff9c4
-    style B fill:#c8e6c9
-    style C fill:#b3e5fc
-    style D fill:#f8bbd0
-    style E fill:#d1c4e9
 ```
 
 **Components:**
@@ -208,8 +195,6 @@ graph TB
     M1 -.-> S[Message remains]
     end
 
-    style X1 fill:#ffcccc
-    style S fill:#ccffcc
 ```
 
 - **Queue**: When you read a message, it's gone—nobody else can read it
@@ -229,8 +214,6 @@ Since messages are immutable, how do we transform data?
 graph LR
     A[Topic: thermostat_readings<br/>All sensor data] -->|Filter| B[Topic: hot_locations<br/>Temperature > 25°C only]
 
-    style A fill:#e3f2fd
-    style B fill:#ffebee
 ```
 
 Example transformation using stream processing:
@@ -256,10 +239,6 @@ graph TB
     A --> D[Compaction<br/>Keep latest value per key]
     A --> E[Forever<br/>Keep all messages]
 
-    style B fill:#bbdefb
-    style C fill:#c5cae9
-    style D fill:#b2dfdb
-    style E fill:#ffccbc
 ```
 
 **Log Compaction** is particularly useful when you only care about the latest state:
@@ -274,10 +253,6 @@ graph LR
     B1[Key:42, Temp:24] --> B2[Key:43, Temp:21]
     end
 
-    style A3 fill:#81c784
-    style A4 fill:#81c784
-    style B1 fill:#81c784
-    style B2 fill:#81c784
 ```
 
 ---
@@ -309,8 +284,6 @@ graph TB
     E --> H[✅ High throughput]
     end
 
-    style A fill:#ffcccc
-    style E fill:#ccffcc
 ```
 
 ### Partition Structure
@@ -332,9 +305,6 @@ graph TB
     P2 --> M21[Offset 1: sensor:47]
     end
 
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
 ```
 
 **Key Points:**
@@ -349,8 +319,6 @@ graph TB
     A --> B[Within Partition<br/>✅ Strict ordering guaranteed]
     A --> C[Across Partitions<br/>❌ No global ordering]
 
-    style B fill:#c8e6c9
-    style C fill:#ffccbc
 ```
 
 **Within a partition:** Messages are read in the exact sequence they were written.
@@ -371,9 +339,6 @@ graph LR
     M3[Message<br/>Key: 44] --> H3[Hash function] --> MOD3[hash % 3 = 2] --> P2[Partition 2]
     M4[Message<br/>Key: 42] --> H4[Hash function] --> MOD4[hash % 3 = 0] --> P0
 
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
 ```
 
 **Process:**
@@ -401,9 +366,6 @@ graph LR
     M4[Message 4<br/>No key] --> P0[Partition 0]
     M5[Message 5<br/>No key] --> P1[Partition 1]
 
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
 ```
 
 **Process:** Messages are distributed evenly across partitions in a round-robin fashion.
@@ -452,10 +414,6 @@ graph TB
     B --> R[Replication Manager<br/>Data sync]
     end
 
-    style B fill:#81c784
-    style S fill:#ffb74d
-    style N fill:#64b5f6
-    style R fill:#ba68c8
 ```
 
 ### Broker Deployment Options
@@ -495,15 +453,6 @@ graph TB
     B2 --> CS1
     B3 --> CS1
 
-    style B1 fill:#81c784
-    style B2 fill:#81c784
-    style B3 fill:#81c784
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
-    style P3 fill:#bbdefb
-    style P4 fill:#c5cae9
-    style P5 fill:#b2dfdb
 ```
 
 ### Topic Distribution Across Brokers
@@ -529,14 +478,6 @@ graph TB
     B2 --> TB1[Partition 1]
     end
 
-    style B1 fill:#81c784
-    style B2 fill:#81c784
-    style B3 fill:#81c784
-    style TA0 fill:#bbdefb
-    style TA1 fill:#bbdefb
-    style TA2 fill:#bbdefb
-    style TB0 fill:#ffccbc
-    style TB1 fill:#ffccbc
 ```
 
 **Note:** Topics can have different numbers of partitions based on their scaling needs.
@@ -577,8 +518,6 @@ graph TB
     K2[Kafka Brokers<br/>with KRaft] --> M[Built-in Metadata<br/>No external dependency]
     end
 
-    style Z fill:#ffccbc
-    style M fill:#c8e6c9
 ```
 
 **KRaft Benefits:**
@@ -603,8 +542,6 @@ graph LR
 
     D[With Replication] --> E[Broker fails] --> F[✅ Data available from replicas]
 
-    style C fill:#ffccbc
-    style F fill:#c8e6c9
 ```
 
 ### Replication Factor
@@ -624,9 +561,6 @@ graph TB
     L -.->|Replicates to| F1
     L -.->|Replicates to| F2
 
-    style L fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
 ```
 
 ### Leader and Followers
@@ -673,15 +607,6 @@ graph TB
     L2 --> F4[New Follower<br/>Broker 4<br/>Replacing Broker 1]
     end
 
-    style L1 fill:#4caf50
-    style X fill:#f44336
-    style L2 fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
-    style F1B fill:#81c784
-    style F2B fill:#81c784
-    style F3 fill:#81c784
-    style F4 fill:#81c784
 ```
 
 **Process:**
@@ -704,9 +629,6 @@ graph TB
     L -.->|Replicates| F1[Follower<br/>Broker 2]
     L -.->|Replicates| F2[Follower<br/>Broker 3]
 
-    style L fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
 ```
 
 - **Writes:** Always go to the leader
@@ -727,9 +649,6 @@ graph TB
     F1 -->|Read| C2[Consumer<br/>EU West]
     F2 -->|Read| C3[Consumer<br/>Asia]
 
-    style L fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
 ```
 
 **Benefits:**
@@ -799,15 +718,6 @@ graph TB
     B1 -->|Read events| CONS[Analytics App<br/>Consumer]
     B2 -->|Read events| CONS
 
-    style B1 fill:#81c784
-    style B2 fill:#81c784
-    style B3 fill:#81c784
-    style P0L fill:#4caf50
-    style P1L fill:#4caf50
-    style P0F1 fill:#a5d6a7
-    style P0F2 fill:#a5d6a7
-    style P1F1 fill:#a5d6a7
-    style P1F2 fill:#a5d6a7
 ```
 
 ### Data Flow Summary

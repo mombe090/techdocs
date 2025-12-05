@@ -126,11 +126,6 @@ graph LR
     C2 --> P
     C3 --> P
 
-    style T fill:#81c784
-    style C1 fill:#64b5f6
-    style C2 fill:#64b5f6
-    style C3 fill:#64b5f6
-    style P fill:#ffb74d
 ```
 
 ---
@@ -673,12 +668,6 @@ graph TB
     P1 --> C2
     P2 --> C3
 
-    style P0 fill:#81c784
-    style P1 fill:#81c784
-    style P2 fill:#81c784
-    style C1 fill:#64b5f6
-    style C2 fill:#64b5f6
-    style C3 fill:#64b5f6
 ```
 
 ### Rééquilibrage
@@ -711,9 +700,6 @@ graph TB
     P2B[Partition 2] --> C3B[Consumer 3]
     end
 
-    style C2A fill:#f44336
-    style C1B fill:#64b5f6
-    style C3B fill:#64b5f6
 ```
 
 ### Directives de Mise à l'Échelle

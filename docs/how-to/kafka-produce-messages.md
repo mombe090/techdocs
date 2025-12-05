@@ -545,8 +545,6 @@ graph TD
     B --> D["Same Key → Same Partition<br/>(Order Preserved)"]
     C --> E[Distribute Evenly<br/>Across Partitions]
 
-    style D fill:#a6e3a1,stroke:#40a02b
-    style E fill:#89b4fa,stroke:#1e66f5
 ```
 
 ### Routing Examples
@@ -727,9 +725,6 @@ graph LR
     A -->|acks=1| C["Leader Only<br/>🚀 Balanced"]
     A -->|acks=all| D["Leader + All Replicas<br/>✅ Most Durable"]
 
-    style B fill:#f38ba8,stroke:#d20f39
-    style C fill:#f9e2af,stroke:#df8e1d
-    style D fill:#a6e3a1,stroke:#40a02b
 ```
 
 ### Comparison Matrix

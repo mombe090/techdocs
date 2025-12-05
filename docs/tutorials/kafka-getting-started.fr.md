@@ -46,8 +46,6 @@ graph LR
     D[Apache Kafka] --> E[Les topics stockent des ÉVÉNEMENTS]
     E --> F[Ajoute les événements au fur et à mesure]
 
-    style A fill:#e1f5ff
-    style D fill:#ffe1e1
 ```
 
 ### Traitement en Temps Réel
@@ -107,8 +105,6 @@ graph TD
     C[Topic Kafka] -->|Append| D[Nouvel événement ajouté à la fin]
     D --> E[Les événements précédents restent inchangés]
 
-    style A fill:#ffcccc
-    style C fill:#ccffcc
 ```
 
 ### Caractéristiques Clés des Topics
@@ -125,10 +121,6 @@ graph LR
     C --> D[Message 3<br/>sensor:44<br/>temp:21°C]
     end
 
-    style A fill:#e3f2fd
-    style B fill:#e3f2fd
-    style C fill:#e3f2fd
-    style D fill:#e3f2fd
 ```
 
 ### Anatomie d'un Message
@@ -145,11 +137,6 @@ graph TB
     E[Offset<br/>Position dans la partition]
     end
 
-    style A fill:#fff9c4
-    style B fill:#c8e6c9
-    style C fill:#b3e5fc
-    style D fill:#f8bbd0
-    style E fill:#d1c4e9
 ```
 
 **Composants :**
@@ -208,8 +195,6 @@ graph TB
     M1 -.-> S[Le message reste]
     end
 
-    style X1 fill:#ffcccc
-    style S fill:#ccffcc
 ```
 
 - **Queue** : Quand vous lisez un message, il disparaît—personne d'autre ne peut le lire
@@ -229,8 +214,6 @@ Puisque les messages sont immuables, comment transformer les données ?
 graph LR
     A[Topic: thermostat_readings<br/>Toutes les données capteurs] -->|Filter| B[Topic: hot_locations<br/>Température > 25°C uniquement]
 
-    style A fill:#e3f2fd
-    style B fill:#ffebee
 ```
 
 Exemple de transformation avec stream processing :
@@ -256,10 +239,6 @@ graph TB
     A --> D[Compaction<br/>Garder la dernière valeur par clé]
     A --> E[Pour toujours<br/>Garder tous les messages]
 
-    style B fill:#bbdefb
-    style C fill:#c5cae9
-    style D fill:#b2dfdb
-    style E fill:#ffccbc
 ```
 
 **Log Compaction** est particulièrement utile quand vous ne vous souciez que du dernier état :
@@ -274,10 +253,6 @@ graph LR
     B1[Key:42, Temp:24] --> B2[Key:43, Temp:21]
     end
 
-    style A3 fill:#81c784
-    style A4 fill:#81c784
-    style B1 fill:#81c784
-    style B2 fill:#81c784
 ```
 
 ---
@@ -309,8 +284,6 @@ graph TB
     E --> H[✅ Débit élevé]
     end
 
-    style A fill:#ffcccc
-    style E fill:#ccffcc
 ```
 
 ### Structure de Partition
@@ -332,9 +305,6 @@ graph TB
     P2 --> M21[Offset 1: sensor:47]
     end
 
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
 ```
 
 **Points Clés :**
@@ -352,8 +322,6 @@ graph TB
     A --> B[Dans une Partition<br/>✅ Ordre strict garanti]
     A --> C[Entre Partitions<br/>❌ Pas d'ordre global]
 
-    style B fill:#c8e6c9
-    style C fill:#ffccbc
 ```
 
 **Dans une partition :** Les messages sont lus dans la séquence exacte où ils ont été écrits.
@@ -371,9 +339,6 @@ graph LR
     M3[Message<br/>Key: 44] --> H3[Fonction hash] --> MOD3[hash % 3 = 2] --> P2[Partition 2]
     M4[Message<br/>Key: 42] --> H4[Fonction hash] --> MOD4[hash % 3 = 0] --> P0
 
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
 ```
 
 **Processus :**
@@ -401,9 +366,6 @@ graph LR
     M4[Message 4<br/>Pas de clé] --> P0[Partition 0]
     M5[Message 5<br/>Pas de clé] --> P1[Partition 1]
 
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
 ```
 
 **Processus :** Les messages sont distribués uniformément entre les partitions en round-robin.
@@ -448,10 +410,6 @@ graph TB
     B --> R[Gestionnaire Réplication<br/>Sync des données]
     end
 
-    style B fill:#81c784
-    style S fill:#ffb74d
-    style N fill:#64b5f6
-    style R fill:#ba68c8
 ```
 
 ### Options de Déploiement des Brokers
@@ -490,15 +448,6 @@ graph TB
     B2 --> CS1
     B3 --> CS1
 
-    style B1 fill:#81c784
-    style B2 fill:#81c784
-    style B3 fill:#81c784
-    style P0 fill:#bbdefb
-    style P1 fill:#c5cae9
-    style P2 fill:#b2dfdb
-    style P3 fill:#bbdefb
-    style P4 fill:#c5cae9
-    style P5 fill:#b2dfdb
 ```
 
 ### Distribution des Topics entre Brokers
@@ -524,14 +473,6 @@ graph TB
     B2 --> TB1[Partition 1]
     end
 
-    style B1 fill:#81c784
-    style B2 fill:#81c784
-    style B3 fill:#81c784
-    style TA0 fill:#bbdefb
-    style TA1 fill:#bbdefb
-    style TA2 fill:#bbdefb
-    style TB0 fill:#ffccbc
-    style TB1 fill:#ffccbc
 ```
 
 **Note :** Les topics peuvent avoir différents nombres de partitions selon leurs besoins de scalabilité.
@@ -572,8 +513,6 @@ graph TB
     K2[Brokers Kafka<br/>avec KRaft] --> M[Métadonnées Intégrées<br/>Pas de dépendance externe]
     end
 
-    style Z fill:#ffccbc
-    style M fill:#c8e6c9
 ```
 
 **Avantages de KRaft :**
@@ -600,8 +539,6 @@ graph LR
 
     D[Avec Réplication] --> E[Le broker échoue] --> F[✅ Données disponibles depuis les réplicas]
 
-    style C fill:#ffccbc
-    style F fill:#c8e6c9
 ```
 
 ### Facteur de Réplication
@@ -621,9 +558,6 @@ graph TB
     L -.->|Réplique vers| F1
     L -.->|Réplique vers| F2
 
-    style L fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
 ```
 
 ### Leader et Followers
@@ -670,15 +604,6 @@ graph TB
     L2 --> F4[Nouveau Follower<br/>Broker 4<br/>Remplace Broker 1]
     end
 
-    style L1 fill:#4caf50
-    style X fill:#f44336
-    style L2 fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
-    style F1B fill:#81c784
-    style F2B fill:#81c784
-    style F3 fill:#81c784
-    style F4 fill:#81c784
 ```
 
 **Processus :**
@@ -701,9 +626,6 @@ graph TB
     L -.->|Réplique| F1[Follower<br/>Broker 2]
     L -.->|Réplique| F2[Follower<br/>Broker 3]
 
-    style L fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
 ```
 
 - **Écritures :** Vont toujours au leader
@@ -724,9 +646,6 @@ graph TB
     F1 -->|Read| C2[Consumer<br/>EU Ouest]
     F2 -->|Read| C3[Consumer<br/>Asie]
 
-    style L fill:#4caf50
-    style F1 fill:#81c784
-    style F2 fill:#81c784
 ```
 
 **Avantages :**
@@ -794,15 +713,6 @@ graph TB
     B1 -->|Lit événements| CONS[Application Analytics<br/>Consumer]
     B2 -->|Lit événements| CONS
 
-    style B1 fill:#81c784
-    style B2 fill:#81c784
-    style B3 fill:#81c784
-    style P0L fill:#4caf50
-    style P1L fill:#4caf50
-    style P0F1 fill:#a5d6a7
-    style P0F2 fill:#a5d6a7
-    style P1F1 fill:#a5d6a7
-    style P1F2 fill:#a5d6a7
 ```
 
 ### Résumé du Flux de Données
