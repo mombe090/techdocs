@@ -68,6 +68,16 @@ repos:
         args: [--baseline, .secrets.baseline]
         exclude: package.lock.json
 
+  # Prettier formatting using npx (local hook)
+  - repo: local
+    hooks:
+      - id: prettier
+        name: prettier
+        entry: bash -c 'npx --yes prettier@3.3.3 --write --ignore-unknown "$@"' --
+        language: system
+        types_or: [json, yaml, markdown]
+        exclude: ^(uv\.lock|\.markdownlint-cli2\.jsonc|agents/)$
+
 # Global settings
 default_install_hook_types: [pre-commit, commit-msg]
 default_stages: [pre-commit]

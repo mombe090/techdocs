@@ -1,0 +1,9 @@
+# Prettier ignore patterns
+site/
+.venv/
+venv/
+node_modules/
+uv.lock
+*.min.js
+*.min.css
+agents/
