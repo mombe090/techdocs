@@ -1,0 +1,17 @@
+[project]
+name = "techdocs"
+version = "0.1.0"
+description = "Personal documentation and tips"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.7",
+    "mkdocs-material-extensions>=1.3",
+    "pymdown-extensions>=10.2",
+    "pygments>=2.16",
+    "mkdocs-minify-plugin>=0.7",
+    "mkdocs-static-i18n>=1.2",
+    "pillow>=10.2",
+    "cairosvg>=2.6",
+]

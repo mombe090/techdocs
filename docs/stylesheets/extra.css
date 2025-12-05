@@ -1,0 +1,27 @@
+/* Catppuccin Mocha Base for Light Mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #1e1e2e;        /* Catppuccin Mocha Base */
+  --md-primary-fg-color--light: #313244;  /* Surface0 (lighter) */
+  --md-primary-fg-color--dark: #181825;   /* Mantle (darker) */
+  --md-accent-fg-color: #74c7ec;          /* Catppuccin Mocha Sapphire */
+  --md-accent-fg-color--transparent: #74c7ec20;
+}
+
+/* Catppuccin Mocha Sapphire for Dark Mode */
+[data-md-color-scheme="slate"] {
+  /* Use Base as background */
+  --md-default-bg-color: #1e1e2e;        /* Catppuccin Mocha Base */
+  --md-default-fg-color: #cdd6f4;        /* Catppuccin Mocha Text */
+  
+  /* Use Sapphire for header */
+  --md-primary-fg-color: #74c7ec;        /* Catppuccin Mocha Sapphire (header) */
+  --md-primary-fg-color--light: #89dceb;  /* Sky */
+  --md-primary-fg-color--dark: #89b4fa;   /* Blue */
+  
+  /* Use Sapphire for accents and links */
+  --md-accent-fg-color: #74c7ec;          /* Catppuccin Mocha Sapphire */
+  --md-accent-fg-color--transparent: #74c7ec20;
+  
+  /* Ensure text on header is visible */
+  --md-primary-bg-color: #11111b;        /* Dark text on sapphire header */
+}
