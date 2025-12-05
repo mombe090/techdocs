@@ -1,75 +1,86 @@
 # Welcome to My Docs & Tips
 
-This is your personal documentation site built with **Material for MkDocs**, inspired by the official mkdocs-material documentation style.
+This is your personal documentation site built with **Material for MkDocs** and organized using the **Diátaxis** framework for systematic documentation.
 
-## Features
+## Quick Navigation
 
-Material for MkDocs comes with tons of great features:
+Our documentation is organized into four sections, each serving different needs:
 
-!!! tip "Beautiful Design"
-    A modern, responsive design that works on all devices with automatic light/dark mode switching.
+### :material-school: Tutorials
 
-!!! example "Rich Content Support"
-    Support for admonitions, code blocks, tabs, diagrams, math equations, and much more.
+**Learning-oriented lessons** to help you get started and build foundational skills.
 
-!!! note "Fast Search"
-    Built-in search functionality with highlighting and suggestions.
+[Start Learning →](tutorials/getting-started.md){ .md-button .md-button--primary }
 
-## Getting Started
+Perfect for: New users, first-time setup, building confidence
 
-### Writing Documentation
+### :material-tools: How-to Guides
 
-Create new markdown files in the `docs/` directory:
+**Goal-oriented guides** for accomplishing specific tasks and solving problems.
 
-```bash
-# Create a new page
-echo "# My New Page" > docs/my-page.md
-```
+[Browse Guides →](how-to/add-new-pages.md){ .md-button }
 
-### Code Blocks
+Perfect for: Getting work done, solving specific problems, practical tasks
 
-Code blocks support syntax highlighting:
+### :material-book-open: Reference
 
-```python
-def hello_world():
-    """A simple hello world function."""
-    print("Hello, World!")
-    return True
-```
+**Technical descriptions** of features, options, and components.
 
-### Admonitions
+[View Reference →](reference/formatting.md){ .md-button }
 
-You can use various admonition types:
+Perfect for: Looking up details, checking syntax, verifying options
 
-!!! warning "Important"
-    Remember to update your configuration in `mkdocs.yml`!
+### :material-lightbulb: Explanation
 
-!!! success "Pro Tip"
-    Use `mkdocs serve` to preview changes in real-time.
+**Understanding-oriented discussions** that provide context and deepen knowledge.
 
-### Task Lists
+[Read Explanations →](explanation/documentation-architecture.md){ .md-button }
 
-- [x] Install mkdocs-material
-- [x] Configure mkdocs.yml
-- [ ] Add more content
-- [ ] Deploy your site
+Perfect for: Understanding concepts, learning the "why", gaining insight
 
-### Tables
+### :material-star: Tips & Tricks
 
-| Feature | Description |
-|---------|-------------|
-| Tabs | Organize content in tabs |
-| Mermaid | Create diagrams |
-| Math | LaTeX math support |
-| Icons | 10,000+ icons available |
+**Quick tips and useful tricks** with organized tabs for performance, styling, shortcuts, and more.
 
-## Next Steps
+[View Tips →](tips-and-tricks.md){ .md-button }
 
-1. Customize the `mkdocs.yml` configuration
-2. Add your own content to the `docs/` directory
-3. Explore the [Material for MkDocs documentation](https://squidfunk.github.io/mkdocs-material/)
-4. Deploy your site to GitHub Pages, GitLab Pages, or any static hosting
+Perfect for: Power users, productivity boosts, discovering hidden features
 
 ---
 
-Made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+## About This Site
+
+### Beautiful Design with Catppuccin
+
+This site uses the **Catppuccin Mocha** color palette, a community-driven pastel theme designed for comfort and aesthetics:
+
+- 🌙 **Dark Mode**: Sapphire accent (`#74c7ec`) 
+- ☀️ **Light Mode**: Base primary (`#1e1e2e`)
+
+Toggle between themes using the icon in the header.
+
+### Features
+
+!!! tip "Bilingual Support"
+    Full documentation available in English and Français. Switch languages using the selector in the header.
+
+!!! example "Modern Stack"
+    Built with MkDocs Material, featuring responsive design, instant search, and rich content support.
+
+!!! note "Organized with Diátaxis"
+    Documentation structure follows the [Diátaxis framework](https://diataxis.fr/) for clarity and usability.
+
+---
+
+## Getting Started
+
+New to this documentation site? Start here:
+
+1. **Complete the [Getting Started Tutorial](tutorials/getting-started.md)** - Build your first page
+2. **Learn [How to Customize Colors](how-to/customize-colors.md)** - Make it your own
+3. **Explore the [Formatting Reference](reference/formatting.md)** - See what's possible
+4. **Understand [Documentation Architecture](explanation/documentation-architecture.md)** - Learn why we organize this way
+
+---
+
+Made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) • Organized with [Diátaxis](https://diataxis.fr/) • Themed with [Catppuccin](https://catppuccin.com/)

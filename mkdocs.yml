@@ -78,10 +78,18 @@ plugins:
           build: true
           nav_translations:
             Home: Accueil
-            Guides: Guides
-            Formatting: Formatage
+            Tutorials: Tutoriels
+            Getting Started: Premiers Pas
+            How-to Guides: Guides Pratiques
+            Add New Pages: Ajouter des Pages
+            Customize Colors: Personnaliser les Couleurs
             Reference: Référence
+            Formatting: Formatage
             Icons & Emojis: Icônes & Emojis
+            Explanation: Explications
+            Documentation Architecture: Architecture de Documentation
+            Catppuccin Colors: Couleurs Catppuccin
+            Tips & Tricks: Astuces & Conseils
   - minify:
       minify_html: true
 
@@ -127,10 +135,18 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# Page tree
+# Page tree - Organized using Diátaxis framework
 nav:
   - Home: index.md
-  - Guides:
-    - Formatting: guides/formatting.md
+  - Tutorials:
+    - Getting Started: tutorials/getting-started.md
+  - How-to Guides:
+    - Add New Pages: how-to/add-new-pages.md
+    - Customize Colors: how-to/customize-colors.md
   - Reference:
+    - Formatting: reference/formatting.md
     - Icons & Emojis: reference/icons.md
+  - Explanation:
+    - Documentation Architecture: explanation/documentation-architecture.md
+    - Catppuccin Colors: explanation/catppuccin-colors.md
+  - Tips & Tricks: tips-and-tricks.md
