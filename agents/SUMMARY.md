@@ -188,11 +188,13 @@ See `agents/MULTILINGUAL_SETUP.md` for detailed instructions.
 ## ✨ Next Steps
 
 1. **Customize** your site:
+
    - Update site name in `mkdocs.yml`
    - Change colors/fonts
    - Add your logo
 
 2. **Add Content**:
+
    - Create more pages in `docs/`
    - Add French translations
    - Update navigation

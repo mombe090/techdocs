@@ -68,15 +68,6 @@ repos:
         args: [--baseline, .secrets.baseline]
         exclude: package.lock.json
 
-  # Prettier for JSON, YAML, Markdown formatting
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-        types_or: [json, yaml, markdown]
-        exclude: ^(uv\.lock|\.markdownlint-cli2\.jsonc)$
-        args: [--prose-wrap, preserve]
-
 # Global settings
 default_install_hook_types: [pre-commit, commit-msg]
 default_stages: [pre-commit]
