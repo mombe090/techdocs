@@ -328,6 +328,69 @@ Add inline icons to enhance readability.
 - Platform/technology indicators
 - Navigation hints
 
+#### 9. Mermaid Diagrams
+
+Create architecture diagrams, flowcharts, sequence diagrams, and more using Mermaid.
+
+**Syntax:**
+
+````markdown
+```mermaid
+graph LR
+    Producer --> Kafka
+    Kafka --> Consumer
+```
+````
+
+**CRITICAL RULE: Never Add Colors to Mermaid Diagrams**
+
+**❌ NEVER DO THIS:**
+
+````markdown
+```mermaid
+graph LR
+    Producer[Producer]:::producer --> Kafka[Kafka]:::kafka
+
+    classDef producer fill:#89b4fa,stroke:#cdd6f4,color:#1e1e2e
+    classDef kafka fill:#f38ba8,stroke:#cdd6f4,color:#1e1e2e
+```
+````
+
+**✅ ALWAYS DO THIS:**
+
+````markdown
+```mermaid
+graph LR
+    Producer --> Kafka --> Consumer
+```
+````
+
+**Why:**
+
+- **Theme compatibility:** Hardcoded colors break dark mode and light mode switching
+- **Accessibility:** Theme colors are optimized for contrast and readability
+- **Maintainability:** Color styles must be manually updated when themes change
+- **Consistency:** Native colors ensure diagrams match the site's visual design
+
+**Exception:** Only use Mermaid's built-in semantic node types (e.g., `([Start])`, `{{Decision}}`, `[(Database)]`) which automatically adapt to themes.
+
+**When to use Mermaid:**
+
+- System architecture diagrams
+- Data flow visualizations
+- Process workflows
+- State machines
+- Sequence diagrams
+- Entity relationships
+
+**Common diagram types:**
+
+- `graph LR` / `graph TD` - Flowcharts (left-to-right / top-down)
+- `sequenceDiagram` - Interaction sequences
+- `stateDiagram-v2` - State machines
+- `erDiagram` - Entity relationships
+- `journey` - User journeys
+
 ### Feature Usage Guidelines by Document Type
 
 #### Tutorials (`docs/tutorials/`)
@@ -469,39 +532,41 @@ When creating new documentation:
 For "Apache Kafka Basics":
 
 1. **Identify content types:**
-   - Tutorial: Getting started with Kafka
-   - How-to: Configure producers/consumers
-   - Reference: Configuration parameters
-   - Explanation: Event streaming concepts
+
+- Tutorial: Getting started with Kafka
+- How-to: Configure producers/consumers
+- Reference: Configuration parameters
+- Explanation: Event streaming concepts
 
 2. **Create files:**
 
-   ```
-   docs/tutorials/kafka-getting-started.md
-   docs/tutorials/kafka-getting-started.fr.md
-   docs/how-to/kafka-configure-producer.md
-   docs/how-to/kafka-configure-producer.fr.md
-   docs/reference/kafka-config-reference.md
-   docs/reference/kafka-config-reference.fr.md
-   docs/explanation/kafka-event-streaming.md
-   docs/explanation/kafka-event-streaming.fr.md
-   ```
+```
+docs/tutorials/kafka-getting-started.md
+docs/tutorials/kafka-getting-started.fr.md
+docs/how-to/kafka-configure-producer.md
+docs/how-to/kafka-configure-producer.fr.md
+docs/reference/kafka-config-reference.md
+docs/reference/kafka-config-reference.fr.md
+docs/explanation/kafka-event-streaming.md
+docs/explanation/kafka-event-streaming.fr.md
+```
 
 3. **Update `mkdocs.yml`:**
 
-   ```yaml
-   nav:
-     - Tutorials:
-         - Apache Kafka: tutorials/kafka-getting-started.md
-     - How-to:
-         - Kafka Producer: how-to/kafka-configure-producer.md
-   ```
+```yaml
+nav:
+  - Tutorials:
+      - Apache Kafka: tutorials/kafka-getting-started.md
+  - How-to:
+      - Kafka Producer: how-to/kafka-configure-producer.md
+```
 
 4. **Commit:**
-   ```bash
-   git add docs/ mkdocs.yml
-   git commit -m "feat: add Apache Kafka documentation with French translations"
-   ```
+
+```bash
+git add docs/ mkdocs.yml
+git commit -m "feat: add Apache Kafka documentation with French translations"
+```
 
 ## Resources
 
