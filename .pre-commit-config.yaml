@@ -25,6 +25,14 @@ repos:
       - id: mixed-line-ending
         args: [--fix=lf]
 
+  # EditorConfig checker
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: 2.7.3
+    hooks:
+      - id: editorconfig-checker
+        alias: ec
+        exclude: ^(uv\.lock|\.secrets\.baseline|agents/.*|docs/reference/.*|docs/tips-and-tricks\.md)$
+
   # YAML linting with yamlint
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.35.1

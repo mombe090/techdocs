@@ -1,0 +1,70 @@
+# EditorConfig helps maintain consistent coding styles across editors and IDEs
+# See https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+# Preserve trailing whitespace in markdown (for line breaks)
+trim_trailing_whitespace = false
+# Disable max line length for markdown (documentation often has long lines)
+max_line_length = off
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# JSONC files (JSON with comments)
+[*.jsonc]
+indent_size = 2
+
+# Python files
+[*.py]
+indent_size = 4
+max_line_length = 88
+
+# Shell scripts
+[*.sh]
+indent_size = 2
+
+# Makefiles (must use tabs)
+[Makefile]
+indent_style = tab
+
+# Batch files (Windows)
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+
+# CSS/SCSS
+[*.{css,scss}]
+indent_size = 2
+
+# JavaScript/TypeScript
+[*.{js,ts,jsx,tsx}]
+indent_size = 2
+
+# HTML
+[*.html]
+indent_size = 2
+
+# Configuration files
+[{package.json,.prettierrc,.eslintrc,.babelrc}]
+indent_size = 2
+
+# Lock files (should not be edited)
+[{package-lock.json,yarn.lock,pnpm-lock.yaml,uv.lock}]
+insert_final_newline = false
