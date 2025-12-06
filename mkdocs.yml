@@ -1,16 +1,17 @@
 # Project information
-site_name: My Docs & Tips
-site_url: https://yourdomain.com
-site_author: Your Name
+site_name: Mombe Docs
+site_url: https://docs.mombesoft.com
+site_author: Yaya DIALLO
 site_description: >-
-  Personal documentation and tips collection built with Material for MkDocs
+  Personal documentation and tips and ticks about various tech topics i learn
+  From home labs to the cloud, all best practices and how-tos.
 
 # Repository (optional - update with your repo if you have one)
-# repo_name: yourusername/techdocs
-# repo_url: https://github.com/yourusername/techdocs
+repo_name: mombe090/techdocs
+repo_url: https://github.com/mombe090/techdocs
 
 # Copyright
-copyright: Copyright &copy; 2025 Your Name
+copyright: Copyright &copy; 2025 free to copy and share, by Mombe090.
 
 # Configuration
 theme:
