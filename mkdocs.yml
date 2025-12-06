@@ -81,23 +81,15 @@ plugins:
           nav_translations:
             Home: Accueil
             Tutorials: Tutoriels
-            Getting Started: Premiers Pas
             Apache Kafka: Apache Kafka
             Kafka Getting Started: Démarrer avec Kafka
             How-to Guides: Guides Pratiques
-            Add New Pages: Ajouter des Pages
-            Customize Colors: Personnaliser les Couleurs
             Produce Messages to Kafka: Produire des Messages vers Kafka
             Consume Messages from Kafka: Consommer des Messages depuis Kafka
             Integrate External Systems: Intégrer des Systèmes Externes
             Use Schema Registry: Utiliser Schema Registry
             Process Data Streams: Traiter des Flux de Données
-            Reference: Référence
-            Formatting: Formatage
-            Icons & Emojis: Icônes & Emojis
             Explanation: Explications
-            Documentation Architecture: Architecture de Documentation
-            Catppuccin Colors: Couleurs Catppuccin
             Tips & Tricks: Astuces & Conseils
   - minify:
       minify_html: true
@@ -148,22 +140,15 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Tutorials:
-      - Getting Started: tutorials/getting-started.md
       - Apache Kafka:
           - Kafka Getting Started: tutorials/kafka-getting-started.md
   - How-to Guides:
-      - Add New Pages: how-to/add-new-pages.md
-      - Customize Colors: how-to/customize-colors.md
       - Apache Kafka:
           - Produce Messages to Kafka: how-to/kafka-produce-messages.md
           - Consume Messages from Kafka: how-to/kafka-consume-messages.md
           - Integrate External Systems: how-to/kafka-connect-systems.md
           - Process Data Streams: how-to/kafka-stream-processing.md
           - Use Schema Registry: how-to/kafka-use-schema-registry.md
-  - Reference:
-      - Formatting: reference/formatting.md
-      - Icons & Emojis: reference/icons.md
   - Explanation:
-      - Documentation Architecture: explanation/documentation-architecture.md
-      - Catppuccin Colors: explanation/catppuccin-colors.md
+      - wip: wip.md
   - Tips & Tricks: tips-and-tricks.md
