@@ -1,17 +1,18 @@
-# Welcome to TechDocs
+# Welcome to MombeDocs
 
-## A Knowledge Sharing Platform
+## My Knowledge Sharing and Tips Platform
 
 This documentation site serves as my personal knowledge repository where I share technical expertise, insights, and learnings from both personal projects and professional experience. All data presented here is anonymized and intended for educational purposes.
 
 !!! info "About This Platform"
-TechDocs is built to democratize technical knowledge and make complex concepts accessible to everyone in the tech community. Whether you're just starting your journey or looking to deepen your expertise, you'll find practical guides and real-world examples here.
+
+    TechDocs is built to democratize technical knowledge and make complex concepts accessible to everyone in the tech community. Whether you're just starting your journey or looking to deepen your expertise, you'll find practical guides and real-world examples here.
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm **Mamadou Yaya DIALLO**, a technology professional with over 8 years of experience in cloud-native technologies, DevOps practices, and distributed systems.
+I'm **Mamadou Yaya DIALLO**, a technology professional with over a decade of experience in cloud-native technologies, DevOps practices, application development, and distributed systems.
 
 ### My Journey
 
@@ -73,34 +74,18 @@ Perfect for: Understanding concepts, learning the "why", gaining insight
 
 ---
 
-## 🌟 Featured Content
-
-### Apache Kafka Documentation
-
-Comprehensive guides covering Apache Kafka fundamentals and advanced concepts:
-
-- **[Getting Started with Kafka](tutorials/kafka-getting-started.md)** - Your first steps into event streaming
-- **[Produce Messages](how-to/kafka-produce-messages.md)** - Send data to Kafka topics
-- **[Consume Messages](how-to/kafka-consume-messages.md)** - Process streaming data
-- **[Kafka Connect](how-to/kafka-connect-systems.md)** - Integrate external systems
-- **[Schema Registry](how-to/kafka-use-schema-registry.md)** - Manage data schemas
-- **[Stream Processing](how-to/kafka-stream-processing.md)** - Build real-time applications
-
-All guides include:
-
-- ✅ Production-ready Docker Compose configurations
-- ✅ Multi-language examples (Java, Python, Node.js, Go)
-- ✅ Best practices and common pitfalls
-- ✅ Bilingual support (English & French)
-
----
-
 ## 🎯 Documentation Philosophy
 
-!!! tip "Knowledge Sharing Principles" 1. **Practical First** - Every guide includes working code and real examples 2. **Anonymized Data** - All examples use fictional data for privacy 3. **Community Focused** - Built for learners at all levels 4. **Open Source** - Documentation source available on GitHub
+!!! tip "Knowledge Sharing Principles"
+
+    1. **Practical First** - Every guide includes working code and real examples
+    2. **Anonymized Data** - All examples use fictional data for privacy
+    3. **Community Focused** - Built for learners at all levels
+    4. **Open Source** - Documentation source available on GitHub
 
 !!! note "Privacy & Anonymization"
-All technical examples, configurations, and code snippets are anonymized and generalized. No proprietary or sensitive information is shared.
+
+    All technical examples, configurations, and code snippets are anonymized and generalized. No proprietary or sensitive information is shared.
 
 ---
 
@@ -154,21 +139,10 @@ Have questions or want to collaborate?
 
 ---
 
-## 🚀 Getting Started
-
-New to this site? Here's how to dive in:
-
-1. **[Start with Kafka Tutorial](tutorials/kafka-getting-started.md)** - Learn event streaming basics
-2. **[Browse How-to Guides](how-to/kafka-produce-messages.md)** - Solve specific problems
-3. **[Check the Reference](reference/formatting.md)** - Look up syntax and options
-4. **[Read Explanations](explanation/documentation-architecture.md)** - Deepen your understanding
-
----
-
 !!! success "Welcome Aboard!"
-Thank you for visiting TechDocs. Whether you're here to learn something new or solve a specific problem, I hope you find this documentation helpful. Happy learning! 🎉
+
+    Thank you for visiting TechDocs. Whether you're here to learn something new or solve a specific problem, I hope you find this documentation helpful. Happy learning! 🎉
 
 ---
 
-_Last updated: December 2025_  
 _Made with ❤️ using [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)_
