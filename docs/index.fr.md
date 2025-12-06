@@ -1,32 +1,75 @@
-# Bienvenue sur TechDocs
+# Bienvenue sur MombeDocs
 
-## Une Plateforme de Partage de Connaissances
+## Ma Plateforme de Partage de Connaissances et D'astuces
 
 Ce site de documentation sert de dépôt personnel de connaissances où je partage mon expertise technique, mes idées et mes apprentissages issus de projets personnels et d'expériences professionnelles. Toutes les données présentées ici sont anonymisées et destinées à des fins éducatives.
 
 !!! info "À propos de cette plateforme"
-TechDocs est conçu pour démocratiser les connaissances techniques et rendre les concepts complexes accessibles à tous dans la communauté technologique. Que vous débutiez votre parcours ou que vous cherchiez à approfondir votre expertise, vous trouverez ici des guides pratiques et des exemples concrets.
+
+    TechDocs est conçu pour démocratiser les connaissances techniques et rendre les concepts complexes accessibles à tous dans la communauté technologique. Que vous débutiez votre parcours ou que vous cherchiez à approfondir votre expertise, vous trouverez ici des guides pratiques et des exemples concrets.
 
 ---
 
 ## 👨‍💻 À propos de moi
 
-Je suis **Mamadou Yaya DIALLO**, un professionnel de la technologie avec plus de 8 ans d'expérience en technologies cloud natives, pratiques DevOps et systèmes distribués.
-
-### Mon Parcours
-
-- 🚀 **Ingénieur Cloud & DevOps** chez [Alithya](https://www.alithya.com/)
-- ☁️ Spécialisé en Kubernetes, CI/CD et infrastructure cloud
-- 🎓 Plusieurs certifications CNCF (CKA, CKAD, CKS)
-- 🌍 Basé dans la région métropolitaine de Montréal, Canada
+Je suis **Mamadou Yaya DIALLO**, un professionnel de la technologie avec plus d'une dizaines d'années d'expérience en technologies cloud natives, pratiques DevOps, de development d'applications et systèmes distribués.
 
 ### Domaines d'expertise
 
-- **Cloud Native**: Kubernetes, Docker, Helm, Operators
-- **Infrastructure as Code**: Terraform, Ansible, GitOps
-- **CI/CD**: GitHub Actions, GitLab CI, Jenkins, Argo CD
-- **Observabilité**: Prometheus, Grafana, ELK Stack
-- **Event Streaming**: Apache Kafka, Traitement de flux
+=== ":fontawesome-solid-code: Développement"
+
+    **Langages**
+    Python, Go, Java, JavaScript/TypeScript, Bash/Shell, SQL
+
+    **Frameworks & Bibliothèques**
+    Spring Boot, FastAPI, Node.js, React, Vue.js
+
+    **Bases de données**
+    PostgreSQL, MongoDB, Redis, Elasticsearch, MySQL
+
+    **APIs & Intégration**
+    REST, GraphQL, gRPC, Messaging (Kafka, RabbitMQ)
+
+    **Tests & Qualité**
+    Unit Testing, Integration Testing, TDD, Code Review
+
+=== ":fontawesome-solid-cloud: Cloud"
+
+    **Fournisseurs cloud**
+    AWS (EC2, S3, Lambda, EKS, RDS)
+    Azure (AKS, Functions, Cosmos DB)
+    GCP (GKE, Cloud Functions, BigQuery)
+
+    **Cloud Native**
+    Kubernetes, Docker, Helm, Operators, Service Mesh
+
+    **Serverless**
+    AWS Lambda, Azure Functions, Cloudflare Workers
+
+    **Gestion des coûts**
+    FinOps, Cost Optimization, Resource Tagging
+
+=== ":fontawesome-solid-gears: DevOps"
+
+    **CI/CD**
+    GitHub Actions, GitLab CI/CD, Jenkins, Argo CD, Flux
+
+    **Infrastructure as Code**
+    Terraform, Ansible, Pulumi, CloudFormation
+
+    **Observabilité**
+    Prometheus, Grafana, ELK Stack, Loki, Jaeger, OpenTelemetry
+
+    **Event Streaming**
+    Apache Kafka, Kafka Streams, Confluent Platform
+
+    **GitOps**
+    ArgoCD, Flux, Kustomize, Helm
+
+    **Certifications**
+    CKA (Certified Kubernetes Administrator)
+    CKAD (Certified Kubernetes Application Developer)
+    CKS (Certified Kubernetes Security Specialist)
 
 ### Me contacter
 
@@ -73,34 +116,18 @@ Parfait pour : Comprendre les concepts, apprendre le "pourquoi", gagner en persp
 
 ---
 
-## 🌟 Contenu vedette
-
-### Documentation Apache Kafka
-
-Guides complets couvrant les fondamentaux et concepts avancés d'Apache Kafka :
-
-- **[Débuter avec Kafka](tutorials/kafka-getting-started.fr.md)** - Vos premiers pas dans le streaming d'événements
-- **[Produire des messages](how-to/kafka-produce-messages.fr.md)** - Envoyer des données vers des topics Kafka
-- **[Consommer des messages](how-to/kafka-consume-messages.fr.md)** - Traiter des données en streaming
-- **[Kafka Connect](how-to/kafka-connect-systems.fr.md)** - Intégrer des systèmes externes
-- **[Schema Registry](how-to/kafka-use-schema-registry.fr.md)** - Gérer les schémas de données
-- **[Traitement de flux](how-to/kafka-stream-processing.fr.md)** - Construire des applications temps réel
-
-Tous les guides incluent :
-
-- ✅ Configurations Docker Compose prêtes pour la production
-- ✅ Exemples multi-langages (Java, Python, Node.js, Go)
-- ✅ Meilleures pratiques et pièges courants
-- ✅ Support bilingue (Anglais et Français)
-
----
-
 ## 🎯 Philosophie de documentation
 
-!!! tip "Principes de partage de connaissances" 1. **Pratique d'abord** - Chaque guide inclut du code fonctionnel et des exemples réels 2. **Données anonymisées** - Tous les exemples utilisent des données fictives pour la confidentialité 3. **Centré sur la communauté** - Conçu pour les apprenants de tous niveaux 4. **Open Source** - Source de documentation disponible sur GitHub
+!!! tip "Principes de partage de connaissances"
+
+    1. **Pratique d'abord** - Chaque guide inclut du code fonctionnel et des exemples réels
+    2. **Données anonymisées** - Tous les exemples utilisent des données fictives pour la confidentialité
+    3. **Centré sur la communauté** - Conçu pour les apprenants de tous niveaux
+    4. **Open Source** - Source de documentation disponible sur GitHub
 
 !!! note "Confidentialité et anonymisation"
-Tous les exemples techniques, configurations et extraits de code sont anonymisés et généralisés. Aucune information propriétaire ou sensible n'est partagée.
+
+    Tous les exemples techniques, configurations et extraits de code sont anonymisés et généralisés. Aucune information propriétaire ou sensible n'est partagée.
 
 ---
 
@@ -154,21 +181,10 @@ Vous avez des questions ou vous voulez collaborer ?
 
 ---
 
-## 🚀 Pour commencer
-
-Nouveau sur ce site ? Voici comment vous lancer :
-
-1. **[Commencez avec le tutoriel Kafka](tutorials/kafka-getting-started.fr.md)** - Apprenez les bases du streaming d'événements
-2. **[Parcourez les guides pratiques](how-to/kafka-produce-messages.fr.md)** - Résolvez des problèmes spécifiques
-3. **[Consultez la référence](reference/formatting.fr.md)** - Recherchez la syntaxe et les options
-4. **[Lisez les explications](explanation/documentation-architecture.md)** - Approfondissez votre compréhension
-
----
-
 !!! success "Bienvenue !"
-Merci de visiter TechDocs. Que vous soyez ici pour apprendre quelque chose de nouveau ou résoudre un problème spécifique, j'espère que vous trouverez cette documentation utile. Bon apprentissage ! 🎉
+
+    Merci de visiter TechDocs. Que vous soyez ici pour apprendre quelque chose de nouveau ou résoudre un problème spécifique, j'espère que vous trouverez cette documentation utile. Bon apprentissage ! 🎉
 
 ---
 
-_Dernière mise à jour : Décembre 2025_  
 _Fait avec ❤️ en utilisant [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)_

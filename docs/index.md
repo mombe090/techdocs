@@ -14,20 +14,39 @@ This documentation site serves as my personal knowledge repository where I share
 
 I'm **Mamadou Yaya DIALLO**, a technology professional with over a decade of experience in cloud-native technologies, DevOps practices, application development, and distributed systems.
 
-### My Journey
-
-- 🚀 **Cloud & DevOps Engineer** at [Alithya](https://www.alithya.com/)
-- ☁️ Specialized in Kubernetes, CI/CD, and cloud infrastructure
-- 🎓 Multiple CNCF certifications (CKA, CKAD, CKS)
-- 🌍 Based in Greater Montreal Metropolitan Area, Canada
-
 ### Expertise Areas
 
-- **Cloud Native**: Kubernetes, Docker, Helm, Operators
-- **Infrastructure as Code**: Terraform, Ansible, GitOps
-- **CI/CD**: GitHub Actions, GitLab CI, Jenkins, Argo CD
-- **Observability**: Prometheus, Grafana, ELK Stack
-- **Event Streaming**: Apache Kafka, Stream Processing
+=== ":fontawesome-solid-code: Development"
+
+    **Languages & Frameworks**
+
+    - **Backend**: Java, Spring Boot, Python, Node.js, Go
+    - **Frontend**: React, Vue.js, TypeScript, JavaScript
+    - **Databases**: PostgreSQL, MySQL, MongoDB, Redis
+    - **APIs**: REST, GraphQL, gRPC
+    - **Testing**: JUnit, pytest, Jest, Selenium
+
+=== ":fontawesome-solid-cloud: Cloud"
+
+    **Cloud Platforms & Services**
+
+    - **AWS**: EC2, ECS, EKS, Lambda, S3, RDS, CloudFormation
+    - **Azure**: VMs, AKS, Functions, Storage, ARM Templates
+    - **GCP**: GCE, GKE, Cloud Functions, Cloud Storage
+    - **Cloud Native**: Kubernetes, Docker, Helm, Operators
+    - **Serverless**: Lambda, Cloud Functions, Cloudflare Workers
+
+=== ":fontawesome-solid-gears: DevOps"
+
+    **DevOps Tools & Practices**
+
+    - **CI/CD**: GitHub Actions, GitLab CI, Jenkins, Argo CD
+    - **Infrastructure as Code**: Terraform, Ansible, Pulumi
+    - **Observability**: Prometheus, Grafana, ELK Stack, Jaeger
+    - **Event Streaming**: Apache Kafka, Stream Processing
+    - **GitOps**: ArgoCD, Flux, Kustomize
+    - **Service Mesh**: Istio, Linkerd
+    - **Certifications**: CKA, CKAD, CKS (CNCF)
 
 ### Connect With Me
 
