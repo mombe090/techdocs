@@ -129,8 +129,40 @@ install_dependencies() {
     fi
 }
 
+# Function to detect if running in CI/CD environment
+is_ci_environment() {
+    # Check common CI/CD environment variables
+    if [ -n "${CI:-}" ] || \
+       [ -n "${CONTINUOUS_INTEGRATION:-}" ] || \
+       [ -n "${GITHUB_ACTIONS:-}" ] || \
+       [ -n "${GITLAB_CI:-}" ] || \
+       [ -n "${CIRCLECI:-}" ] || \
+       [ -n "${TRAVIS:-}" ] || \
+       [ -n "${JENKINS_URL:-}" ] || \
+       [ -n "${BUILDKITE:-}" ] || \
+       [ -n "${CF_PAGES:-}" ] || \
+       [ -n "${VERCEL:-}" ] || \
+       [ -n "${NETLIFY:-}" ]; then
+        return 0  # True - is CI
+    fi
+
+    # Check if sudo is not available (typical in containerized CI)
+    if ! command_exists sudo; then
+        return 0  # True - likely CI without sudo
+    fi
+
+    return 1  # False - not CI
+}
+
 # Function to install system dependencies (optional, for Cairo/Pillow)
 install_system_dependencies() {
+    # Auto-skip in CI/CD environments
+    if is_ci_environment; then
+        log_info "CI/CD environment detected - skipping system dependencies"
+        log_info "MkDocs will build without Cairo/Pillow image optimization"
+        return 0
+    fi
+
     log_info "Checking system dependencies for image optimization..."
 
     # Detect OS
@@ -240,11 +272,13 @@ ${GREEN}Requirements:${NC}
   - Git
 
 ${GREEN}Environment Variables:${NC}
-  SKIP_SYSTEM_DEPS=1   Skip system dependency installation
+  SKIP_SYSTEM_DEPS=1   Force skip system dependency installation
 
 ${YELLOW}Note:${NC}
-  This script is designed to work in Cloudflare Workers build environment
-  and local development environments.
+  - Auto-detects CI/CD environments (Cloudflare, GitHub Actions, etc.)
+  - Automatically skips system dependencies in CI/CD (no sudo needed)
+  - System dependencies (Cairo/Pillow) only installed in local environments
+  - Designed to work in both cloud build and local development environments
 
 For more information, see: https://developers.cloudflare.com/pages/
 

@@ -29,17 +29,34 @@ Bash script for building and deploying the MkDocs site to Cloudflare Workers.
 
 **Features:**
 
+- ✅ **Auto CI/CD detection** - Automatically detects Cloudflare Workers, GitHub Actions, and other CI environments
+- ✅ **No sudo required in CI** - Skips system dependencies when running in containerized/CI environments
 - ✅ Automatic `uv` installation if not present
-- ✅ Python version checking (3.11+ required)
-- ✅ System dependency installation (Cairo, Pillow for image optimization)
+- ✅ Python version checking (3.11+ required, 3.13+ recommended)
+- ✅ Smart system dependency installation (Cairo, Pillow for image optimization, local only)
 - ✅ Fast dependency installation with `uv` or fallback to `pip`
 - ✅ Clean build with `--strict` mode
 - ✅ Colored output for better readability
 - ✅ Cross-platform support (Linux, macOS, Windows via Git Bash)
 
+**CI/CD Auto-Detection:**
+
+The script automatically detects when running in CI/CD environments and skips system dependency installation (which requires `sudo`). Supported platforms:
+
+- Cloudflare Pages/Workers
+- GitHub Actions
+- GitLab CI
+- CircleCI
+- Travis CI
+- Jenkins
+- Buildkite
+- Vercel
+- Netlify
+- Any environment without `sudo` access
+
 **Environment Variables:**
 
-- `SKIP_SYSTEM_DEPS=1` - Skip system dependency installation (useful for CI/CD)
+- `SKIP_SYSTEM_DEPS=1` - Force skip system dependency installation (auto-detected in CI/CD)
 
 **Requirements:**
 
