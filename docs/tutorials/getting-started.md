@@ -101,4 +101,4 @@ Now that you're familiar with the basics, you can:
 - Explore the [Formatting Reference](../reference/formatting.md) for all available options
 - Learn [How to Add New Pages](../how-to/add-new-pages.md)
 - Learn [How to Customize Colors](../how-to/customize-colors.md)
-- Read about [Documentation Architecture](../explanation/documentation-architecture.md) to understand best practices
+- Read about [Documentation Architecture](../explanation/mkdocs/documentation-architecture.md) to understand best practices

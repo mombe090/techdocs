@@ -81,21 +81,27 @@ plugins:
           nav_translations:
             Home: Accueil
             Tutorials: Tutoriels
+            Containers: Conteneurs
+            Kubernetes: Kubernetes
+            Networking: Réseau
+            Cilium: Cilium
+            Deploy with an LB on Talos: Déployer avec un LB sur Talos
             Apache Kafka: Apache Kafka
             Getting Started: Démarrer avec Kafka
-            Kubernetes: Kubernetes
-            Deploy with an LB on Talos: Déployer avec un LB sur Talos
+            Event Streaming: Diffusion d'Événements
             How-to Guides: Guides Pratiques
-            Produce Messages to Kafka: Produire des Messages vers Kafka
-            Consume Messages from Kafka: Consommer des Messages depuis Kafka
-            Integrate External Systems: Intégrer des Systèmes Externes
-            Use Schema Registry: Utiliser Schema Registry
-            Process Data Streams: Traiter des Flux de Données
             L2 Announcements: Annonces L2
             Troubleshoot LoadBalancer: Dépanner le LoadBalancer
+            Produce Messages: Produire des Messages
+            Consume Messages: Consommer des Messages
+            Integrate Systems: Intégrer des Systèmes
+            Process Data Streams: Traiter des Flux de Données
+            Use Schema Registry: Utiliser Schema Registry
             Explanation: Explications
             L2 Networking on Talos: Réseau L2 sur Talos
-            Network: Réseau
+            MkDocs: MkDocs
+            Catppuccin Colors: Couleurs Catppuccin
+            Documentation Architecture: Architecture de la Documentation
             Tips & Tricks: Astuces & Conseils
             Performance: Performance
             Optimize MkDocs: Optimiser MkDocs
@@ -159,36 +165,40 @@ nav:
   - Home: index.md
   - Tutorials:
       - Containers:
-          - K8S:
-              - Network:
+          - Kubernetes:
+              - Networking:
                   - Cilium:
-                      - Deploy with an LB on Talos: tutorials/cilium-l2-loadbalancer-talos.md
+                      - Deploy with an LB on Talos: tutorials/containers/kubernetes/networking/cilium/cilium-l2-loadbalancer-talos.md
 
       - Event Streaming:
           - Apache Kafka:
-              - Getting Started: tutorials/kafka-getting-started.md
+              - Getting Started: tutorials/event-streaming/kafka/kafka-getting-started.md
   - How-to Guides:
       - Containers:
-          - K8S:
-              - Network:
+          - Kubernetes:
+              - Networking:
                   - Cilium:
-                      - L2 Announcements: how-to/cilium-configure-l2-announcements.md
-                      - Troubleshoot LoadBalancer: how-to/cilium-troubleshoot-loadbalancer.md
+                      - L2 Announcements: how-to/containers/kubernetes/networking/cilium/cilium-configure-l2-announcements.md
+                      - Troubleshoot LoadBalancer: how-to/containers/kubernetes/networking/cilium/cilium-troubleshoot-loadbalancer.md
 
       - Event Streaming:
           - Apache Kafka:
-              - Produce Messages to Kafka: how-to/kafka-produce-messages.md
-              - Consume Messages from Kafka: how-to/kafka-consume-messages.md
-              - Integrate External Systems: how-to/kafka-connect-systems.md
-              - Process Data Streams: how-to/kafka-stream-processing.md
-              - Use Schema Registry: how-to/kafka-use-schema-registry.md
+              - Produce Messages: how-to/event-streaming/kafka/kafka-produce-messages.md
+              - Consume Messages: how-to/event-streaming/kafka/kafka-consume-messages.md
+              - Integrate Systems: how-to/event-streaming/kafka/kafka-connect-systems.md
+              - Process Data Streams: how-to/event-streaming/kafka/kafka-stream-processing.md
+              - Use Schema Registry: how-to/event-streaming/kafka/kafka-use-schema-registry.md
 
   - Explanation:
       - Containers:
-          - K8S:
-              - Network:
+          - Kubernetes:
+              - Networking:
                   - Cilium:
-                      - L2 Networking on Talos: explanation/cilium-l2-networking-talos.md
+                      - L2 Networking on Talos: explanation/containers/kubernetes/networking/cilium/cilium-l2-networking-talos.md
+
+      - MkDocs:
+          - Catppuccin Colors: explanation/mkdocs/catppuccin-colors.md
+          - Documentation Architecture: explanation/mkdocs/documentation-architecture.md
 
   - Tips & Tricks:
       - tips-and-tricks/index.md

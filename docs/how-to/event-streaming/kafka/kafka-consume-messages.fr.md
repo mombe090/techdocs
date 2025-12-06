@@ -9,7 +9,7 @@ Apprenez à construire des **applications consumer Kafka** qui lisent et traiten
 ## Prérequis
 
 - Docker et Docker Compose installés
-- Compréhension de base des [topics et partitions Kafka](../tutorials/kafka-getting-started.md#topics-kafka-logs-dévénements-immuables)
+- Compréhension de base des [topics et partitions Kafka](../../../tutorials/event-streaming/kafka/kafka-getting-started.md#topics-kafka-logs-dévénements-immuables)
 - Environnement de développement avec les bibliothèques client Kafka
 
 ---
@@ -724,7 +724,8 @@ graph TB
 
 ??? bug "Scénarios d'Échec Courants"
 **1. Erreurs Réseau Transitoires**
-```java
+
+````java
 int maxRetries = 3;
 int retryCount = 0;
 
@@ -977,7 +978,7 @@ Voici un exemple de consumer prêt pour la production :
 
 ## Prochaines Étapes
 
-!!! tip "Continuez Votre Apprentissage" - [:fontawesome-solid-diagram-project: **Utiliser Schema Registry**](kafka-use-schema-registry.md) - Gérer les schémas de données pour la sécurité des types - [:fontawesome-solid-link: **Connecter des Systèmes Externes**](kafka-connect-systems.md) - Intégrer Kafka avec des bases de données - [:fontawesome-solid-stream: **Traiter des Streams**](kafka-stream-processing.md) - Transformer des données en temps réel - [:fontawesome-solid-book: **Retour au Tutoriel**](../tutorials/kafka-getting-started.md) - Réviser les concepts fondamentaux
+!!! tip "Continuez Votre Apprentissage" - [:fontawesome-solid-diagram-project: **Utiliser Schema Registry**](kafka-use-schema-registry.md) - Gérer les schémas de données pour la sécurité des types - [:fontawesome-solid-link: **Connecter des Systèmes Externes**](kafka-connect-systems.md) - Intégrer Kafka avec des bases de données - [:fontawesome-solid-stream: **Traiter des Streams**](kafka-stream-processing.md) - Transformer des données en temps réel - [:fontawesome-solid-book: **Retour au Tutoriel**](../../../tutorials/event-streaming/kafka/kafka-getting-started.md) - Réviser les concepts fondamentaux
 
 ## Ressources Supplémentaires
 
@@ -1004,3 +1005,4 @@ Voici un exemple de consumer prêt pour la production :
 
 !!! info "Attribution du Cours"
 Ce guide est basé sur le contenu du [cours Apache Kafka 101](https://developer.confluent.io/courses/apache-kafka/consumers/) de Confluent et la documentation officielle Apache Kafka.
+````

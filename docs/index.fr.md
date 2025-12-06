@@ -86,7 +86,7 @@ Cette documentation est organisée selon le **framework Diátaxis** pour plus de
 
 **Guides orientés apprentissage** qui vous aident à démarrer avec de nouvelles technologies par la pratique.
 
-[Explorer les Tutoriels →](tutorials/kafka-getting-started.md){ .md-button }
+[Explorer les Tutoriels →](tutorials/event-streaming/kafka/kafka-getting-started.md){ .md-button }
 
 Parfait pour : Débutants, première configuration, développement de compétences fondamentales
 
@@ -94,7 +94,7 @@ Parfait pour : Débutants, première configuration, développement de compétenc
 
 **Guides orientés objectifs** pour accomplir des tâches spécifiques et résoudre des problèmes concrets.
 
-[Parcourir les Guides →](how-to/kafka-produce-messages.md){ .md-button }
+[Parcourir les Guides →](how-to/event-streaming/kafka/kafka-produce-messages.md){ .md-button }
 
 Parfait pour : Accomplir du travail, résoudre des problèmes spécifiques, implémentations pratiques
 
@@ -110,7 +110,7 @@ Parfait pour : Rechercher des détails, vérifier la syntaxe, confirmer des opti
 
 **Discussions conceptuelles** qui fournissent du contexte et approfondissent votre compréhension du "pourquoi".
 
-[Lire les Explications →](explanation/documentation-architecture.md){ .md-button }
+[Lire les Explications →](explanation/mkdocs/documentation-architecture.md){ .md-button }
 
 Parfait pour : Comprendre les concepts, apprendre le "pourquoi", gagner en perspicacité
 

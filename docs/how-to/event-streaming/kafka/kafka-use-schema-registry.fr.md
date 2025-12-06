@@ -111,7 +111,8 @@ docker-compose down
 ```
 
 !!! tip "Tester l'Enregistrement de Schéma"
-```bash # Enregistrer un schéma Avro simple
+
+````bash # Enregistrer un schéma Avro simple
 curl -X POST http://localhost:8081/subjects/test-value/versions \
  -H "Content-Type: application/vnd.schemaregistry.v1+json" \
  -d '{
@@ -144,7 +145,7 @@ graph LR
     B -->|6. Retourner Schéma| D
     D -->|7. Désérialiser| D
 
-```
+````
 
 !!! tip "Avantages de Schema Registry" - **Intégrité des Données :** Empêche les données incompatibles d'entrer dans les topics - **Évolution du Schéma :** Supporte l'ajout/suppression de champs sans casser les consommateurs - **Économie de Bande Passante :** Les messages ne contiennent qu'un petit ID de schéma au lieu du schéma complet - **Application de Compatibilité :** Plusieurs modes de compatibilité (backward, forward, full)
 

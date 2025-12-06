@@ -8,7 +8,7 @@ Avant de commencer, assurez-vous d'avoir :
 
 - [x] Docker et Docker Compose installés
 - [x] Environnement de développement configuré (JDK 11+, Python 3.8+, ou Node.js 16+)
-- [x] Une compréhension de base des [concepts Kafka](../tutorials/kafka-getting-started.md)
+- [x] Une compréhension de base des [concepts Kafka](../../../tutorials/event-streaming/kafka/kafka-getting-started.md)
 
 ---
 
@@ -84,7 +84,8 @@ docker-compose down
 ```
 
 !!! tip "Vérifier que Kafka Fonctionne"
-```bash # Créer un topic de test
+
+````bash # Créer un topic de test
 docker exec kafka-kraft kafka-topics \
  --bootstrap-server localhost:9092 \
  --create --topic test-topic --partitions 3 --replication-factor 1
@@ -108,7 +109,7 @@ graph LR
     B --> C[Partition 0]
     B --> D[Partition 1]
     B --> E[Partition 2]
-```
+````
 
 ---
 
@@ -1451,7 +1452,7 @@ sequenceDiagram
 
   Plongée profonde dans l'architecture et les mécanismes internes de Kafka
 
-  [:octicons-arrow-right-24: Tutoriel Kafka](../tutorials/kafka-getting-started.md)
+  [:octicons-arrow-right-24: Tutoriel Kafka](../../../tutorials/event-streaming/kafka/kafka-getting-started.md)
 
 </div>
 

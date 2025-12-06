@@ -124,7 +124,8 @@ docker-compose down
 1. Topic compacté pour les données client (garde uniquement la dernière valeur par clé)
 
 !!! tip "Vérifier la Configuration du Traitement de Flux"
-```bash # Lister les topics
+
+````bash # Lister les topics
 docker exec kafka-kraft kafka-topics \
  --bootstrap-server localhost:9092 --list
 
@@ -154,7 +155,7 @@ Les applications Kafka Streams s'exécutent comme des **processus Java séparés
 Le **Traitement de Flux** est le traitement en temps réel de flux de données continus. Contrairement au traitement par lot (qui traite des données historiques), le traitement de flux analyse les données dès leur arrivée—permettant des insights et actions instantanés.
 
 !!! info "Traitement de Flux vs Traitement par Lot"
-**Traitement par Lot :** Traiter les données en gros morceaux chaque heure/jour (ex: jobs ETL nocturnes)  
+**Traitement par Lot :** Traiter les données en gros morceaux chaque heure/jour (ex: jobs ETL nocturnes)
  **Traitement de Flux :** Traiter chaque événement immédiatement à son arrivée (ex: détection de fraude, tableaux de bord temps réel)
 
 ```mermaid
@@ -167,7 +168,7 @@ graph LR
     D --> G[Tableau de Bord Analytics]
     E --> H[Service Client]
 
-```
+````
 
 !!! tip "Quand Utiliser le Traitement de Flux" - **Analytique temps réel** - Tableaux de bord live, métriques, surveillance - **Actions pilotées par événements** - Détection de fraude, alertes, notifications - **Enrichissement de données** - Joindre des événements avec des données de référence en temps réel - **ETL continu** - Transformer et router les données entre systèmes - **Traitement d'événements complexes** - Détecter des patterns à travers plusieurs événements
 
@@ -1081,7 +1082,7 @@ Maintenant que vous comprenez le traitement de flux, explorez :
 
 - **[Kafka Connect](kafka-connect-systems.md)** - Intégrer le traitement de flux avec des systèmes externes
 - **[Schema Registry](kafka-use-schema-registry.md)** - Utiliser Avro pour une sérialisation de flux efficace
-- **[Démarrer avec Kafka](../tutorials/kafka-getting-started.md)** - Revoir les fondamentaux de Kafka
+- **[Démarrer avec Kafka](../../../tutorials/event-streaming/kafka/kafka-getting-started.md)** - Revoir les fondamentaux de Kafka
 
 ---
 

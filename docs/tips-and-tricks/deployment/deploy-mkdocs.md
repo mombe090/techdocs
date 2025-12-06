@@ -297,4 +297,4 @@ Before deploying to production, verify:
 ## Next Steps
 
 - [Optimize Site Performance](../performance/optimize-mkdocs-performance.md)
-- [Add Analytics and Monitoring](../../explanation/documentation-architecture.md)
+- [Add Analytics and Monitoring](../../explanation/mkdocs/documentation-architecture.md)
