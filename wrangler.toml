@@ -1,0 +1,14 @@
+# Top-level configuration
+name = "techdocs"
+compatibility_date = "2024-12-05"
+
+# Uncomment and configure your custom domain
+#route = { pattern = "techdocs.yourdomain.com/*", zone_name = "yourdomain.com" }
+
+[build]
+command = "./scripts/cloudflare.worker.sh full"
+
+[assets]
+directory = "site"
+
+not_found_handling = "404-page"
