@@ -124,7 +124,8 @@ docker-compose down
 1. Compacted topic for customer data (keeps only latest value per key)
 
 !!! tip "Verify Stream Processing Setup"
-```bash # List topics
+
+````bash # List topics
 docker exec kafka-kraft kafka-topics \
  --bootstrap-server localhost:9092 --list
 
@@ -154,7 +155,7 @@ Kafka Streams applications run as **separate Java processes**, not inside Kafka:
 **Stream Processing** is the real-time processing of continuous data streams. Unlike batch processing (which processes historical data), stream processing analyzes data as it arrives—enabling instant insights and actions.
 
 !!! info "Stream Processing vs Batch Processing"
-**Batch Processing:** Process data in large chunks every hour/day (e.g., nightly ETL jobs)  
+**Batch Processing:** Process data in large chunks every hour/day (e.g., nightly ETL jobs)
  **Stream Processing:** Process each event immediately as it arrives (e.g., fraud detection, real-time dashboards)
 
 ```mermaid
@@ -167,7 +168,7 @@ graph LR
     D --> G[Analytics Dashboard]
     E --> H[Customer Service]
 
-```
+````
 
 !!! tip "When to Use Stream Processing" - **Real-time analytics** - Live dashboards, metrics, monitoring - **Event-driven actions** - Fraud detection, alerting, notifications - **Data enrichment** - Join events with reference data in real-time - **Continuous ETL** - Transform and route data between systems - **Complex event processing** - Detect patterns across multiple events
 
@@ -1081,7 +1082,7 @@ Now that you understand stream processing, explore:
 
 - **[Kafka Connect](kafka-connect-systems.md)** - Integrate stream processing with external systems
 - **[Schema Registry](kafka-use-schema-registry.md)** - Use Avro for efficient stream serialization
-- **[Kafka Getting Started](../tutorials/kafka-getting-started.md)** - Review Kafka fundamentals
+- **[Kafka Getting Started](../../../tutorials/event-streaming/kafka/kafka-getting-started.md)** - Review Kafka fundamentals
 
 ---
 

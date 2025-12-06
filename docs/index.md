@@ -63,7 +63,7 @@ This documentation is organized using the **Diátaxis framework** for clarity an
 
 **Learning-oriented guides** that help you get started with new technologies through hands-on practice.
 
-[Explore Tutorials →](tutorials/kafka-getting-started.md){ .md-button }
+[Explore Tutorials →](tutorials/event-streaming/kafka/kafka-getting-started.md){ .md-button }
 
 Perfect for: Beginners, first-time setup, building foundational skills
 
@@ -71,7 +71,7 @@ Perfect for: Beginners, first-time setup, building foundational skills
 
 **Goal-oriented guides** for accomplishing specific tasks and solving real-world problems.
 
-[Browse Guides →](how-to/kafka-produce-messages.md){ .md-button }
+[Browse Guides →](how-to/event-streaming/kafka/kafka-produce-messages.md){ .md-button }
 
 Perfect for: Getting work done, solving specific problems, practical implementations
 
@@ -87,7 +87,7 @@ Perfect for: Looking up details, checking syntax, verifying options
 
 **Conceptual discussions** that provide context and deepen your understanding of the "why" behind the tech.
 
-[Read Explanations →](explanation/documentation-architecture.md){ .md-button }
+[Read Explanations →](explanation/mkdocs/documentation-architecture.md){ .md-button }
 
 Perfect for: Understanding concepts, learning the "why", gaining insight
 
@@ -165,3 +165,21 @@ Have questions or want to collaborate?
 ---
 
 _Made with ❤️ using [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)_
+
+
+## 🔴 Livereload Test 14:58:15
+
+If you see this without manually refreshing, livereload is working!
+
+<!-- Test change 14:58:54 -->
+
+<!-- Polling test 14:59:28 -->
+
+<!-- Livereload test 15:00:09 -->
+
+
+## ✅ FINAL LIVERELOAD TEST 15:01:00
+
+If you see this appear without refreshing, livereload is working!
+
+<!-- Dirty flag test 15:01:39 -->

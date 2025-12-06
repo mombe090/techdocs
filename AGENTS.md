@@ -86,29 +86,62 @@ Admonitions highlight important information with visual boxes. Use them strategi
 
 ```markdown
 !!! note "Optional Title"
-Content goes here
+
+    Content goes here
 
 !!! tip "Pro Tip"
-Content here
+
+    Content here
 
 !!! warning "Important"
-Content here
+
+    Content here
 
 !!! danger "Critical"
-Content here
+
+    Content here
 
 !!! success "Success"
-Content here
+
+    Content here
 
 !!! info "Information"
-Content here
+
+    Content here
 
 !!! summary "Key Takeaways"
-Content here
+
+    Content here
 
 ??? bug "Collapsible Troubleshooting"
-This is collapsed by default (use ??? instead of !!!)
+
+    This is collapsed by default (use ??? instead of !!!)
 ```
+
+**CRITICAL FORMATTING RULE:**
+
+!!! danger "Admonition Indentation"
+
+    For MkDocs Material admonitions to render correctly, you **MUST**:
+    
+    1. Leave **one blank line** after the admonition declaration (`!!! type "Title"`)
+    2. Indent the content with **4 spaces** (or 1 tab)
+    
+    **❌ WRONG:**
+    ```markdown
+    !!! tip "Title"
+    Content without blank line and proper indentation
+    ```
+    
+    **✅ CORRECT:**
+    ```markdown
+    !!! tip "Title"
+
+        Content with blank line and 4-space indentation
+        Multiple lines must all be indented
+    ```
+    
+    See: [MkDocs Material Admonitions Reference](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 
 **When to use:**
 
@@ -525,6 +558,56 @@ git commit -m "feat: add new documentation"
 # ✅ User pushes manually when ready
 ```
 
+## Best Practices & Common Patterns
+
+### Apache Kafka - Bootstrap Servers
+
+When documenting Kafka bootstrap servers configuration, **always include this best practice guidance:**
+
+!!! tip "Bootstrap Servers Best Practice"
+You don't need to list **all** brokers—just enough for initial discovery. The producer will automatically learn about the rest of the cluster.
+
+**Key points to include:**
+
+- One broker is sufficient, but 2-3 recommended for redundancy
+- Client discovers full cluster topology automatically
+- More brokers = better fault tolerance during initial connection
+- No performance benefit beyond initial discovery
+
+**Example annotation pattern to use in documentation:**
+
+````markdown
+```java
+props.put("bootstrap.servers", "localhost:9092,localhost:9093");  // (1)!
+```
+
+1. List 2-3 brokers for redundancy during initial connection. The client will automatically discover the full cluster topology.
+````
+
+### Kubernetes - Talos Linux Context
+
+When documenting Kubernetes deployments on Talos Linux:
+
+!!! note "Talos-Specific Considerations"
+Talos Linux is API-driven and immutable. Configuration cannot be changed via SSH or direct file editing.
+
+**Key Talos requirements to mention:**
+
+- **KubePrism:** API server runs on `localhost:7445` (not standard `6443`)
+- **CGroup v2:** Pre-mounted at `/sys/fs/cgroup`, no autoMount needed
+- **No SSH access:** All changes via `talosctl` API calls
+- **Security contexts:** Some capabilities (like `SYS_MODULE`) unavailable
+- **Interface names:** Usually `enp0s*`, `ens*`, or `eth*` depending on hypervisor
+
+**Cross-reference pattern:**
+
+When creating Kubernetes documentation, reference the related homelab_automation implementation:
+
+```markdown
+!!! info "Implementation Reference"
+For production-ready configuration files and deployment automation, see the [homelab_automation repository](https://github.com/mombe090/homelab_automation).
+```
+
 ## Current Topics
 
 ### Implemented
@@ -533,10 +616,12 @@ git commit -m "feat: add new documentation"
 - Catppuccin Mocha theming
 - Diátaxis documentation structure
 - Pre-commit hooks and validation
+- Apache Kafka documentation (from Confluent course)
+- Kubernetes Cilium L2 LoadBalancer on Talos documentation
 
 ### In Progress
 
-- Apache Kafka documentation (from Confluent course)
+- Kubernetes networking and service mesh guides
 
 ### Planned
 

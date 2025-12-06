@@ -9,7 +9,7 @@ Learn how to build **Kafka consumer applications** that read and process event s
 ## Prerequisites
 
 - Docker and Docker Compose installed
-- Basic understanding of [Kafka topics and partitions](../tutorials/kafka-getting-started.md#topics-kafka-logs-dévénements-immuables)
+- Basic understanding of [Kafka topics and partitions](../../../tutorials/event-streaming/kafka/kafka-getting-started.md#topics-kafka-logs-dévénements-immuables)
 - Development environment with Kafka client libraries
 
 ---
@@ -724,7 +724,8 @@ graph TB
 
 ??? bug "Common Failure Scenarios"
 **1. Transient Network Errors**
-```java
+
+````java
 int maxRetries = 3;
 int retryCount = 0;
 
@@ -977,7 +978,7 @@ Here's a production-ready consumer example:
 
 ## What's Next?
 
-!!! tip "Continue Learning" - [:fontawesome-solid-diagram-project: **Use Schema Registry**](kafka-use-schema-registry.md) - Manage data schemas for type safety - [:fontawesome-solid-link: **Connect External Systems**](kafka-connect-systems.md) - Integrate Kafka with databases - [:fontawesome-solid-stream: **Process Streams**](kafka-stream-processing.md) - Transform data in real-time - [:fontawesome-solid-book: **Back to Tutorial**](../tutorials/kafka-getting-started.md) - Review core concepts
+!!! tip "Continue Learning" - [:fontawesome-solid-diagram-project: **Use Schema Registry**](kafka-use-schema-registry.md) - Manage data schemas for type safety - [:fontawesome-solid-link: **Connect External Systems**](kafka-connect-systems.md) - Integrate Kafka with databases - [:fontawesome-solid-stream: **Process Streams**](kafka-stream-processing.md) - Transform data in real-time - [:fontawesome-solid-book: **Back to Tutorial**](../../../tutorials/event-streaming/kafka/kafka-getting-started.md) - Review core concepts
 
 ## Additional Resources
 
@@ -1004,3 +1005,4 @@ Here's a production-ready consumer example:
 
 !!! info "Course Attribution"
 This guide is based on content from the [Apache Kafka 101 course](https://developer.confluent.io/courses/apache-kafka/consumers/) by Confluent and official Apache Kafka documentation.
+````

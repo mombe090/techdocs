@@ -111,7 +111,8 @@ docker-compose down
 ```
 
 !!! tip "Test Schema Registration"
-```bash # Register a simple Avro schema
+
+````bash # Register a simple Avro schema
 curl -X POST http://localhost:8081/subjects/test-value/versions \
  -H "Content-Type: application/vnd.schemaregistry.v1+json" \
  -d '{
@@ -144,7 +145,7 @@ graph LR
     B -->|6. Return Schema| D
     D -->|7. Deserialize| D
 
-```
+````
 
 !!! tip "Schema Registry Benefits" - **Data Integrity:** Prevents incompatible data from entering topics - **Schema Evolution:** Supports adding/removing fields without breaking consumers - **Bandwidth Savings:** Messages only contain a small schema ID instead of full schema - **Compatibility Enforcement:** Multiple compatibility modes (backward, forward, full)
 

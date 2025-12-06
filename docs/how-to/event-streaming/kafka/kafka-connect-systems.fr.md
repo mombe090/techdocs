@@ -9,7 +9,7 @@ Apprenez à utiliser **Kafka Connect** pour construire des pipelines d'intégrat
 ## Prérequis
 
 - Docker et Docker Compose installés
-- Compréhension de base des [topics et partitions Kafka](../tutorials/kafka-getting-started.md)
+- Compréhension de base des [topics et partitions Kafka](../../../tutorials/event-streaming/kafka/kafka-getting-started.md)
 - Identifiants du système cible (base de données, API, etc.)
 
 ---
@@ -130,7 +130,8 @@ docker-compose down
 ```
 
 !!! tip "Installer des Connecteurs Supplémentaires"
-```bash # Installer un connecteur depuis Confluent Hub (exemple: Elasticsearch Sink)
+
+````bash # Installer un connecteur depuis Confluent Hub (exemple: Elasticsearch Sink)
 docker exec kafka-connect confluent-hub install \
  confluentinc/kafka-connect-elasticsearch:latest --no-prompt
 
@@ -185,7 +186,7 @@ graph LR
     SINK1 -->|Écrire| ES
     SINK1 -->|Écrire| DW
 
-```
+````
 
 ### Types de Connecteurs
 
@@ -721,7 +722,8 @@ Les SMTs effectuent des transformations simples et sans état sur les messages q
 
 ??? bug "Dépannage Connecteurs"
 **1. Le Connecteur Ne Démarre Pas**
-```bash # Vérifier logs
+
+````bash # Vérifier logs
 tail -f logs/connect.log
 
     # Causes courantes :
@@ -913,7 +915,7 @@ sleep 5
 
 curl http://localhost:8083/connectors/postgres-orders-source/status
 curl http://localhost:8083/connectors/elasticsearch-orders-sink/status
-```
+````
 
 ---
 

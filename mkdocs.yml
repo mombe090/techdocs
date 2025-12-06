@@ -81,16 +81,40 @@ plugins:
           nav_translations:
             Home: Accueil
             Tutorials: Tutoriels
+            Containers: Conteneurs
+            Kubernetes: Kubernetes
+            Networking: Réseau
+            Cilium: Cilium
+            Deploy with an LB on Talos: Déployer avec un LB sur Talos
             Apache Kafka: Apache Kafka
-            Kafka Getting Started: Démarrer avec Kafka
+            Getting Started: Démarrer avec Kafka
+            Event Streaming: Diffusion d'Événements
             How-to Guides: Guides Pratiques
-            Produce Messages to Kafka: Produire des Messages vers Kafka
-            Consume Messages from Kafka: Consommer des Messages depuis Kafka
-            Integrate External Systems: Intégrer des Systèmes Externes
-            Use Schema Registry: Utiliser Schema Registry
+            L2 Announcements: Annonces L2
+            Troubleshoot LoadBalancer: Dépanner le LoadBalancer
+            Produce Messages: Produire des Messages
+            Consume Messages: Consommer des Messages
+            Integrate Systems: Intégrer des Systèmes
             Process Data Streams: Traiter des Flux de Données
+            Use Schema Registry: Utiliser Schema Registry
             Explanation: Explications
+            L2 Networking on Talos: Réseau L2 sur Talos
+            MkDocs: MkDocs
+            Catppuccin Colors: Couleurs Catppuccin
+            Documentation Architecture: Architecture de la Documentation
             Tips & Tricks: Astuces & Conseils
+            Performance: Performance
+            Optimize MkDocs: Optimiser MkDocs
+            Styling: Style
+            Customize Styling: Personnaliser le Style
+            Keyboard: Clavier
+            Keyboard Shortcuts: Raccourcis Clavier
+            Content: Contenu
+            Enhance Content: Enrichir le Contenu
+            Deployment: Déploiement
+            Deploy Site: Déployer le Site
+            Writing: Rédaction
+            Best Practices: Bonnes Pratiques
   - minify:
       minify_html: true
 
@@ -140,15 +164,53 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Tutorials:
-      - Apache Kafka:
-          - Kafka Getting Started: tutorials/kafka-getting-started.md
+      - Containers:
+          - Kubernetes:
+              - Networking:
+                  - Cilium:
+                      - Deploy with an LB on Talos: tutorials/containers/kubernetes/networking/cilium/cilium-l2-loadbalancer-talos.md
+
+      - Event Streaming:
+          - Apache Kafka:
+              - Getting Started: tutorials/event-streaming/kafka/kafka-getting-started.md
   - How-to Guides:
-      - Apache Kafka:
-          - Produce Messages to Kafka: how-to/kafka-produce-messages.md
-          - Consume Messages from Kafka: how-to/kafka-consume-messages.md
-          - Integrate External Systems: how-to/kafka-connect-systems.md
-          - Process Data Streams: how-to/kafka-stream-processing.md
-          - Use Schema Registry: how-to/kafka-use-schema-registry.md
+      - Containers:
+          - Kubernetes:
+              - Networking:
+                  - Cilium:
+                      - L2 Announcements: how-to/containers/kubernetes/networking/cilium/cilium-configure-l2-announcements.md
+                      - Troubleshoot LoadBalancer: how-to/containers/kubernetes/networking/cilium/cilium-troubleshoot-loadbalancer.md
+
+      - Event Streaming:
+          - Apache Kafka:
+              - Produce Messages: how-to/event-streaming/kafka/kafka-produce-messages.md
+              - Consume Messages: how-to/event-streaming/kafka/kafka-consume-messages.md
+              - Integrate Systems: how-to/event-streaming/kafka/kafka-connect-systems.md
+              - Process Data Streams: how-to/event-streaming/kafka/kafka-stream-processing.md
+              - Use Schema Registry: how-to/event-streaming/kafka/kafka-use-schema-registry.md
+
   - Explanation:
-      - wip: wip.md
-  - Tips & Tricks: tips-and-tricks.md
+      - Containers:
+          - Kubernetes:
+              - Networking:
+                  - Cilium:
+                      - L2 Networking on Talos: explanation/containers/kubernetes/networking/cilium/cilium-l2-networking-talos.md
+
+      - MkDocs:
+          - Catppuccin Colors: explanation/mkdocs/catppuccin-colors.md
+          - Documentation Architecture: explanation/mkdocs/documentation-architecture.md
+
+  - Tips & Tricks:
+      - tips-and-tricks/index.md
+      - Performance:
+          - Optimize MkDocs: tips-and-tricks/performance/optimize-mkdocs-performance.md
+      - Styling:
+          - Customize Styling: tips-and-tricks/styling/customize-mkdocs-styling.md
+      - Keyboard:
+          - Keyboard Shortcuts: tips-and-tricks/keyboard/keyboard-shortcuts.md
+      - Content:
+          - Enhance Content: tips-and-tricks/content/enhance-mkdocs-content.md
+      - Deployment:
+          - Deploy Site: tips-and-tricks/deployment/deploy-mkdocs.md
+      - Writing:
+          - Best Practices: tips-and-tricks/writing/documentation-best-practices.md
