@@ -82,15 +82,33 @@ plugins:
             Home: Accueil
             Tutorials: Tutoriels
             Apache Kafka: Apache Kafka
-            Kafka Getting Started: Démarrer avec Kafka
+            Getting Started: Démarrer avec Kafka
+            Kubernetes: Kubernetes
+            Deploy with an LB on Talos: Déployer avec un LB sur Talos
             How-to Guides: Guides Pratiques
             Produce Messages to Kafka: Produire des Messages vers Kafka
             Consume Messages from Kafka: Consommer des Messages depuis Kafka
             Integrate External Systems: Intégrer des Systèmes Externes
             Use Schema Registry: Utiliser Schema Registry
             Process Data Streams: Traiter des Flux de Données
+            L2 Announcements: Annonces L2
+            Troubleshoot LoadBalancer: Dépanner le LoadBalancer
             Explanation: Explications
+            L2 Networking on Talos: Réseau L2 sur Talos
+            Network: Réseau
             Tips & Tricks: Astuces & Conseils
+            Performance: Performance
+            Optimize MkDocs: Optimiser MkDocs
+            Styling: Style
+            Customize Styling: Personnaliser le Style
+            Keyboard: Clavier
+            Keyboard Shortcuts: Raccourcis Clavier
+            Content: Contenu
+            Enhance Content: Enrichir le Contenu
+            Deployment: Déploiement
+            Deploy Site: Déployer le Site
+            Writing: Rédaction
+            Best Practices: Bonnes Pratiques
   - minify:
       minify_html: true
 
@@ -140,15 +158,49 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Tutorials:
-      - Apache Kafka:
-          - Kafka Getting Started: tutorials/kafka-getting-started.md
+      - Containers:
+          - K8S:
+              - Network:
+                  - Cilium:
+                      - Deploy with an LB on Talos: tutorials/cilium-l2-loadbalancer-talos.md
+
+      - Event Streaming:
+          - Apache Kafka:
+              - Getting Started: tutorials/kafka-getting-started.md
   - How-to Guides:
-      - Apache Kafka:
-          - Produce Messages to Kafka: how-to/kafka-produce-messages.md
-          - Consume Messages from Kafka: how-to/kafka-consume-messages.md
-          - Integrate External Systems: how-to/kafka-connect-systems.md
-          - Process Data Streams: how-to/kafka-stream-processing.md
-          - Use Schema Registry: how-to/kafka-use-schema-registry.md
+      - Containers:
+          - K8S:
+              - Network:
+                  - Cilium:
+                      - L2 Announcements: how-to/cilium-configure-l2-announcements.md
+                      - Troubleshoot LoadBalancer: how-to/cilium-troubleshoot-loadbalancer.md
+
+      - Event Streaming:
+          - Apache Kafka:
+              - Produce Messages to Kafka: how-to/kafka-produce-messages.md
+              - Consume Messages from Kafka: how-to/kafka-consume-messages.md
+              - Integrate External Systems: how-to/kafka-connect-systems.md
+              - Process Data Streams: how-to/kafka-stream-processing.md
+              - Use Schema Registry: how-to/kafka-use-schema-registry.md
+
   - Explanation:
-      - wip: wip.md
-  - Tips & Tricks: tips-and-tricks.md
+      - Containers:
+          - K8S:
+              - Network:
+                  - Cilium:
+                      - L2 Networking on Talos: explanation/cilium-l2-networking-talos.md
+
+  - Tips & Tricks:
+      - tips-and-tricks/index.md
+      - Performance:
+          - Optimize MkDocs: tips-and-tricks/performance/optimize-mkdocs-performance.md
+      - Styling:
+          - Customize Styling: tips-and-tricks/styling/customize-mkdocs-styling.md
+      - Keyboard:
+          - Keyboard Shortcuts: tips-and-tricks/keyboard/keyboard-shortcuts.md
+      - Content:
+          - Enhance Content: tips-and-tricks/content/enhance-mkdocs-content.md
+      - Deployment:
+          - Deploy Site: tips-and-tricks/deployment/deploy-mkdocs.md
+      - Writing:
+          - Best Practices: tips-and-tricks/writing/documentation-best-practices.md
