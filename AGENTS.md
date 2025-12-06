@@ -496,6 +496,35 @@ docs: translate Kafka guide to French
 fix: correct code example in Kafka producer guide
 ```
 
+### Git Workflow Rules
+
+**CRITICAL: Never Push to Remote**
+
+- ❌ **NEVER** run `git push` to remote repositories
+- ✅ Always commit changes locally with `git commit`
+- ✅ Keep commits ready for manual push by the user
+- 🔒 This ensures user control over what gets published
+
+**Why:**
+
+- User maintains full control over published content
+- Allows review before making changes public
+- Prevents accidental publication of work-in-progress
+- User decides when and what to deploy
+
+**Correct workflow:**
+
+```bash
+# ✅ DO: Commit locally
+git add .
+git commit -m "feat: add new documentation"
+
+# ❌ DON'T: Never push automatically
+# git push origin main  # NEVER DO THIS
+
+# ✅ User pushes manually when ready
+```
+
 ## Current Topics
 
 ### Implemented
